@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 import { Img } from "components";
 import PortugueseLogo from "components/Header/Icons/img_ellipse_1.png";
@@ -15,22 +15,30 @@ const ActualLanguage = ({
 }) => {
   function handleIcons() {
     if (selectedLanguage == "Portuguese") {
-      return <Img src={PortugueseLogo} className="flex w-[10%]" />;
+      return <Img src={PortugueseLogo} className="flex w-[18%]" />;
     } else if (selectedLanguage == "English") {
-      return <Img src={EnglishLogo} className="flex w-[10%]" />;
+      return <Img src={EnglishLogo} className="flex w-[18%]" />;
     } else {
-      return <Img src={SpanishLogo} className="flex w-[10%] " />;
+      return <Img src={SpanishLogo} className="flex w-[18%] " />;
     }
   }
+
   return (
     <div
       onClick={() => {
         setMenuLanguageIsOpen(true);
       }}
-      className="flex w-[64%] gap-0 justify-center items-center  rounded-[20px]  bg-blue_gray-100 hover:bg-[#a8a4a4] hover:cursor-pointer border-solid border-gray-900_01 md:w-full gap-5 py-2"
+      className="flex w-[64%] h-12 gap-0 justify-center items-center  rounded-[18px]  bg-blue_gray-100 hover:bg-[#a8a4a4] hover:cursor-pointer border-solid border-gray-900_01 md:w-full gap-5 py-2"
     >
       {handleIcons()}
-      <h1 className="flex justify-start text-start items-start">
+      <h1
+        className="flex m-0 text-[100%]
+text-[14.99px]
+font-medium
+font-['DM
+Sans']
+leading-[14.99px]"
+      >
         {selectedLanguage}
       </h1>
     </div>

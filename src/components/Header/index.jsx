@@ -55,7 +55,7 @@ export default function Header({ ...props }) {
         />
       </div>
     ) : (
-      <div className="flex justify-center items-center w-[20%] ">
+      <div className="flex justify-center items-center w-[20%] self-stretch ">
         <ActualLanguage
           Icon={PortugueseLogo}
           selectedLanguage={selectedLanguage}
@@ -70,7 +70,7 @@ export default function Header({ ...props }) {
       {...props}
       className={`${props.className} flex self-stretch w-[100%]   p-[22px] sm:p-5 z-[4] fixed bg-teal-100_4c justify-center items-start`}
     >
-      <div className="flex w-[60%] items-center justify-around  gap-5 md:flex-col">
+      <div className="flex w-[100%] items-center justify-around  gap-5 md:flex-col">
         <div
           onClick={() => {
             getPageYAfterScroll();
@@ -119,7 +119,7 @@ export default function Header({ ...props }) {
                   size="textxs"
                   as="p"
                   id="Home"
-                  className="text-[15.39px] font-medium text-transparent underline"
+                  className="text-[15.39px] font-medium text-transparent hover:text-orange-300 hover:underline"
                 >
                   Home
                 </Heading>

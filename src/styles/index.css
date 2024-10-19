@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: DM Sans;
-}
-
 * {
   box-sizing: border-box;
   line-height: normal;
@@ -55,7 +49,7 @@ input:focus {
 .growup {
   transform: scale(1.2);
   transition: transform 0.8s ease-in-out;
-  background-color: var(--DARK-GREEN, #001B1B)
+  background-color: var(--DARK-GREEN, #114b0a)
 }
 
 .growdown {
@@ -174,6 +168,239 @@ color: #FFF;
   background-image: url('/public/images/img_arrowleft_white_a700.svg')!important;
   background-repeat: no-repeat;
 }
+.growUpButton:hover {
+    transform: scale(1.2);
+    transition: transform 0.8s ease-in-out;
+    background-color: var(--DARK-GREEN, #114b0a)
+}
 
+.last-of-type {
+  padding-left: 0;
+}
+
+
+.inner {
+  display: flex;
+  margin-top: 152px;
+  width: 120%;
+  height: 104px;
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 5rem;
+  background: #001B1B;
+backdrop-filter: blur(5px);
+
+
+height: 104px;
+justify-content:center ;
+align-items: center;
+}
+
+.wrapper {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 5rem;
+ 
+backdrop-filter: blur(5px);
+justify-content:end ;
+align-items: center;
+
+}
+
+.sectionText {
+  width: 100%;
+  text-wrap: nowrap;
+  animation: scroll 2s linear infinite ;
+  color: red;
+}
+
+.h1Slider {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  font-family: "DM Sans";
+font-size: 32.362px;
+font-style: normal;
+font-weight: 400;
+line-height: 48.543px; /* 150% */
+background: var(--Gold, linear-gradient(180deg, #D8B75A 0%, #FFE496 100%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+
+.inner ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 20s linear infinite;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+.stock-ticker {
+  font-size: 15px;
+  padding-block: 8px;
+  border-block: 1px solid;
+  overflow: hidden;
+  user-select: none;
+
+  --gap: 20px;
+  display: flex;
+  gap: var(--gap);
+}
+
+.stock-ticker ul {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+
+  animation: scroll 50s linear infinite;
+}
+
+
+@keyframes scroll {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.stock-ticker ul:first-child {
+  /* background-color: yellow; */
+}
+
+.stock-ticker ul:last-child {
+  /* background-color: pink; */
+}
+
+.stock-ticker .company,
+.stock-ticker .price {
+  font-weight: bold;
+}
+
+.stock-ticker .price {
+  margin-inline: 4px;
+}
+
+.stock-ticker .plus::before {
+  content: "↑";
+}
+
+.stock-ticker .minus::before {
+  content: "↓";
+}
+
+.stock-ticker .plus .change,
+.stock-ticker .plus::before {
+  color: #089981;
+}
+
+.stock-ticker .minus .change,
+.stock-ticker .minus::before {
+  color: #f23645;
+}
+
+.fixDiv {
+  display: block;
+  position: absolute; left: 50%; transform: translate( -50%);
+display: flex; align-items: center; justify-content: center;
+display: grid; place-items: center; 
+}
+
+.alice-carousel__stage-item {
+  width: 100%;
+  height: auto;
+  height: max-content;
+}
+
+/* THE MAINCONTAINER HOLDS EVERYTHING */
+.maincontainer{
+  position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+/* THE CARD HOLDS THE FRONT AND BACK FACES */
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+/* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+/* THE FRONT FACE OF THE CARD, WHICH SHOWS BY DEFAULT */
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+  color: #000;
+}
+
+/* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
+.theback{
+
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+
+  transform: rotateY(180deg);
+  background-image: url('/src//pages/Home/SwapperImgOnHover/flipcard/img_ellipse_7.png') none repeat scroll 0;
+  object-fit: cover;
+}
+
+
+/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 12px;
+  text-align: center;
+}
 
 

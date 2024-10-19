@@ -6,12 +6,16 @@ export default function Home1Columnannettebl() {
   const sliderRef = React.useRef(null);
 
   return (
-    <div className="relative mt-[-274px] overflow-auto">
+    <div className="relative mt-[20%] overflow-auto">
       <div className="mx-auto flex w-full">
         <Slider
           autoPlay
           autoPlayInterval={2000}
-          responsive={{ 0: { items: 1 }, 551: { items: 1 }, 1051: { items: 1 } }}
+          responsive={{
+            0: { items: 1 },
+            551: { items: 1 },
+            1051: { items: 1 },
+          }}
           disableDotsControls
           activeIndex={sliderState}
           onSlideChanged={(e) => {
@@ -43,8 +47,10 @@ export default function Home1Columnannettebl() {
                                 as="p"
                                 className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700"
                               >
-                                Outstanding deep cleaning service! Every corner of our home is spotless. The team was
-                                meticulous and went above and beyond. Highly recommend for thorough cleanings!
+                                Outstanding deep cleaning service! Every corner
+                                of our home is spotless. The team was meticulous
+                                and went above and beyond. Highly recommend for
+                                thorough cleanings!
                               </Text>
                             </div>
                             <Img
@@ -72,8 +78,10 @@ export default function Home1Columnannettebl() {
                             as="p"
                             className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700"
                           >
-                            Impressive job! Our living room looks refreshed, and the carpets are spotless. The attention
-                            to detail in the kitchen and bathroom is outstanding. Highly satisfied with the results!
+                            Impressive job! Our living room looks refreshed, and
+                            the carpets are spotless. The attention to detail in
+                            the kitchen and bathroom is outstanding. Highly
+                            satisfied with the results!
                           </Text>
                         </div>
                         <RatingBar
@@ -108,8 +116,10 @@ export default function Home1Columnannettebl() {
                                 as="p"
                                 className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700"
                               >
-                                Fantastic move-in cleaning! Our new home was spotless and ready to move into. The team
-                                did an amazing job making everything feel fresh and welcoming.
+                                Fantastic move-in cleaning! Our new home was
+                                spotless and ready to move into. The team did an
+                                amazing job making everything feel fresh and
+                                welcoming.
                               </Text>
                             </div>
                             <Img
@@ -137,8 +147,10 @@ export default function Home1Columnannettebl() {
                             as="p"
                             className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700"
                           >
-                            Our home has never looked better! The kitchen is sparkling clean, and the bathrooms are
-                            pristine. The team did an incredible job with every detail. We couldn&#39;t be happier!
+                            Our home has never looked better! The kitchen is
+                            sparkling clean, and the bathrooms are pristine. The
+                            team did an incredible job with every detail. We
+                            couldn&#39;t be happier!
                           </Text>
                         </div>
                         <RatingBar
@@ -169,8 +181,9 @@ export default function Home1Columnannettebl() {
                               as="p"
                               className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700"
                             >
-                              Great service! They deliver on their promises. Since starting regular cleanings, time with
-                              my family has become even more precious.{" "}
+                              Great service! They deliver on their promises.
+                              Since starting regular cleanings, time with my
+                              family has become even more precious.{" "}
                             </Text>
                           </div>
                           <RatingBar
@@ -238,8 +251,9 @@ export default function Home1Columnannettebl() {
                                 as="p"
                                 className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700"
                               >
-                                Great job on our office cleaning! The team was prompt and thorough, leaving our
-                                workspace spotless. Highly recommend!
+                                Great job on our office cleaning! The team was
+                                prompt and thorough, leaving our workspace
+                                spotless. Highly recommend!
                               </Text>
                             </div>
                             <RatingBar

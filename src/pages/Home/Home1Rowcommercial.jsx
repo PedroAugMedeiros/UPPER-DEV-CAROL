@@ -94,8 +94,8 @@ export default function Home1Rowcommercial() {
                         alt="Image"
                         className="h-[262px] rounded-[26.825px] object-cover"
                       />
-                      <div className="flex flex-col items-start gap-6">
-                        <div className="flex flex-col  gap-2.5 self-stretch justify-center ml-[5%]">
+                      <div className="flex flex-col justify-end items-start gap-6 self-stretch h-full">
+                        <div className="flex flex-col  justify-end gap-2.5 self-stretch justify-center ml-[5%]">
                           <Heading
                             as="h4"
                             className="font-bevietnampro text-[24px] font-semibold text-gray-900 md:text-[22px]"
@@ -104,7 +104,7 @@ export default function Home1Rowcommercial() {
                           </Heading>
                           <Text
                             as="p"
-                            className="w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700 ml-[1%]"
+                            className="h-full w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700 ml-[1%]"
                           >
                             {item.text}
                           </Text>
@@ -118,7 +118,7 @@ export default function Home1Rowcommercial() {
                               className={`learnMoreImg mb-0.5 h-[20px] w-[20px]`}
                             ></div>
                           }
-                          className="LearnMoreButton flex h-[44px] min-w-[158px] flex-row items-center justify-center gap-2.5 rounded-md border border-solid border-gray-700 px-[19px] text-center font-bevietnampro text-[16px] text-gray-900 ml-[5%]"
+                          className="LearnMoreButton flex h-[44px] min-w-[158px] flex-row items-center justify-center gap-2.5 rounded-md border border-solid border-gray-700 px-[19px] text-center font-bevietnampro text-[16px] text-gray-900 ml-[5%] mt-[5%] bottom-4"
                         >
                           Learn more{" "}
                         </Button>

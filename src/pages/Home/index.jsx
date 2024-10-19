@@ -6,7 +6,7 @@ import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import Home1ColumnFifteen from "./Home1ColumnFifteen";
 import Home1Columnannettebl from "./Home1Columnannettebl";
-import Home1RowEight from "./Home1RowEight";
+import Home1RowEight from "./Home1RowEight.jsx";
 import Home1RowFive from "./Home1RowFive";
 import Home1RowSix from "./Home1RowSix";
 import Home1RowThree from "./Home1RowThree";
@@ -16,12 +16,23 @@ import React, { useEffect, useState } from "react";
 import { MenuTypeServices } from "components/MenuTypeServices";
 import { MenuFrequencyServices } from "components/MenuFrequencyServices";
 import { useNavigate } from "react-router-dom";
+import { Scroll } from "components/ScrollInfiny/Scroll/index.jsx";
 
 const dropDownOptions = [
   { label: "Option1", value: "option1" },
   { label: "Option2", value: "option2" },
   { label: "Option3", value: "option3" },
 ];
+
+const rowSix = [
+  "Professional Service",
+  "Trustworthy Team",
+  "Reliable Results",
+  "Customer Focused",
+].map((image) => ({
+  id: crypto.randomUUID(),
+  image,
+}));
 
 export default function Home1Page() {
   const [defaultDate, setDefaultDate] = useState("");
@@ -70,7 +81,7 @@ export default function Home1Page() {
           content="Web site created using create-react-app"
         />
       </Helmet>
-      <div className="w-full bg-gray-200">
+      <div className="w-full bg-gray-200 unlockOverflow">
         <div className="flex flex-col items-center">
           <div className="relative h-[1868px] self-stretch">
             <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-end">
@@ -264,20 +275,20 @@ export default function Home1Page() {
           <Home1RowThree />
           <Home1Rowcommercial />
           <Home1RowFive />
-          <Home1RowSix />
+          <Scroll images={rowSix} speed={9000} />
           <Home1RowEight />
-          <div className="mt-1.5 self-stretch">
-            <div className="flex flex-col items-center">
-              <div className="container-xs relative z-[4] flex flex-col items-start pl-[386px] pr-14 md:px-5">
+          <div className="mt-1.5 self-stretch justify-start">
+            <div className="flex flex-col items-center justify-start">
+              <div className="container-xs relative z-[3] flex flex-col items-start pl-[386px] pr-14 md:px-5 justify-start">
                 <Img
                   src="images/img_design_sem_nome.png"
                   alt="Designsemnome"
-                  className="mr-6 h-[308px] w-[52%] object-contain md:mr-0"
+                  className="absolute self-start place-self-start right-30 mt-10 mr-6 h-[308px] w-[52%] object-contain md:mr-0 fixDiv"
                 />
               </div>
-              <div className="relative mt-[-206px] h-[2224px] self-stretch bg-[url(/public/images/img_group_11.png)] bg-cover bg-no-repeat md:h-auto">
-                <div className="mb-[382px] flex flex-col items-center gap-48 md:gap-36 sm:gap-24">
-                  <div className="h-[104px] self-stretch bg-[url(/public/images/img_group_4.png)] bg-cover bg-no-repeat py-[26px] md:h-auto sm:py-5">
+
+              <div className="mb-[382px] flex flex-col items-center gap-48 md:gap-36 sm:gap-24">
+                {/* <div className="h-[104px] self-stretch bg-[url(/public/images/img_group_4.png)] bg-cover bg-no-repeat py-[26px] md:h-auto sm:py-5">
                     <div className="flex justify-center overflow-x-scroll md:flex-col">
                       <div className="flex w-[352px] px-2.5 md:px-5">
                         <Text
@@ -316,173 +327,175 @@ export default function Home1Page() {
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div className="container-xs md:px-5">
-                    <div>
-                      <div className="mr-2 flex flex-col gap-[102px] md:mr-0 md:gap-[76px] sm:gap-[51px]">
-                        <div>
-                          <div className="flex gap-20 md:flex-col">
-                            <EcoFriendlyProductDescription />
-                            <EcoFriendlyProductDescription
-                              titleText="Customized Cleaning:"
-                              descriptionText="We understand that every home is unique. Our team will work with you to develop a customized cleaning plan that meets your specific needs and preferences."
-                              className="mb-9 md:mb-0"
-                            />
-                          </div>
-                          <div className="ml-[156px] mr-[180px] mt-[52px] flex flex-col items-center gap-3 md:mx-0">
-                            <Heading
-                              size="heading6xl"
-                              as="h2"
-                              className="font-bevietnampro text-[48px] font-bold text-teal-300_01 md:text-[44px] sm:text-[38px]"
-                            >
-                              Cross-Contamination Prevention:
-                            </Heading>
-                            <Text
-                              size="textxl"
-                              as="p"
-                              className="self-stretch text-center font-roboto text-[22.91px] font-normal leading-[160%] text-black-900"
-                            >
-                              At 520 Cleaning Solutions, we take cleanliness
-                              seriously. We use different cleaning cloths for
-                              each area of your home to prevent
-                              cross-contamination. Additionally, all our
-                              cleaning cloths are washed and sanitized after
-                              each use to maintain the highest hygiene
-                              standards.
-                            </Text>
-                          </div>
-                          <div className="ml-[68px] mr-[86px] mt-[236px] flex flex-col items-center gap-[108px] md:mx-0 md:gap-[81px] sm:gap-[54px]">
-                            <div className="self-stretch">
-                              <div className="flex flex-col gap-[52px] sm:gap-[26px]">
-                                <div className="flex gap-[30px] md:flex-col">
-                                  <div className="flex flex-1 items-center gap-6 md:flex-col md:self-stretch">
-                                    <div className="flex w-[26%] justify-center rounded-[92px] border-[1.16px] border-dashed border-black-900 p-2 md:w-full">
-                                      <div className="w-full rounded-[84px] bg-teal-300 p-[42px] md:p-5">
-                                        <Img
-                                          src="images/img_calendar.svg"
-                                          alt="Calendar"
-                                          className="h-[82px] w-[82px]"
-                                        />
-                                      </div>
-                                    </div>
-                                    <div className="h-[3.47px] flex-1 bg-gray-600 md:self-stretch" />
-                                    <Img
-                                      src="images/img_group_158.svg"
-                                      alt="Image"
-                                      className="h-[186px] w-[26%] object-contain md:w-full"
-                                    />
-                                    <div className="h-[3.47px] flex-1 bg-gray-600 md:self-stretch" />
-                                  </div>
-                                  <div className="flex w-[18%] justify-center rounded-[92px] border-[1.16px] border-dashed border-black-900 p-2 md:w-full">
-                                    <div className="w-full rounded-[84px] bg-teal-300 px-[38px] py-10 sm:p-5">
-                                      <div className="flex flex-col gap-1.5">
-                                        <div className="flex items-center justify-end gap-[9px]">
-                                          <Img
-                                            src="images/img_signal.svg"
-                                            alt="Signal"
-                                            className="h-[24px] self-end"
-                                          />
-                                          <Img
-                                            src="images/img_signal_gray_200.svg"
-                                            alt="Signal"
-                                            className="h-[46px]"
-                                          />
-                                        </div>
-                                        <Img
-                                          src="images/img_user.svg"
-                                          alt="User"
-                                          className="h-[36px]"
-                                        />
-                                      </div>
+                  </div> */}
+                <Scroll images={rowSix} speed={9000} />
+                <div className="container-xs md:px-5">
+                  <div>
+                    <div className="mr-2 flex flex-col gap-[102px] md:mr-0 md:gap-[76px] sm:gap-[51px]">
+                      <div>
+                        <div className="flex gap-20 md:flex-col">
+                          <EcoFriendlyProductDescription />
+                          <EcoFriendlyProductDescription
+                            titleText="Customized Cleaning:"
+                            descriptionText="We understand that every home is unique. Our team will work with you to develop a customized cleaning plan that meets your specific needs and preferences."
+                            className="mb-9 md:mb-0"
+                          />
+                        </div>
+                        <div className="ml-[156px] mr-[180px] mt-[52px] flex flex-col items-center gap-3 md:mx-0">
+                          <Heading
+                            size="heading6xl"
+                            as="h2"
+                            className="font-bevietnampro text-[48px] font-bold text-teal-300_01 md:text-[44px] sm:text-[38px]"
+                          >
+                            Cross-Contamination Prevention:
+                          </Heading>
+                          <Text
+                            size="textxl"
+                            as="p"
+                            className="self-stretch text-center font-roboto text-[22.91px] font-normal leading-[160%] text-black-900"
+                          >
+                            At 520 Cleaning Solutions, we take cleanliness
+                            seriously. We use different cleaning cloths for each
+                            area of your home to prevent cross-contamination.
+                            Additionally, all our cleaning cloths are washed and
+                            sanitized after each use to maintain the highest
+                            hygiene standards.
+                          </Text>
+                        </div>
+                        <div className="ml-[68px] mr-[86px] mt-[236px] flex flex-col items-center gap-[108px] md:mx-0 md:gap-[81px] sm:gap-[54px]">
+                          <div className="self-stretch">
+                            <div className="flex flex-col gap-[52px] sm:gap-[26px]">
+                              <div className="flex gap-[30px] md:flex-col">
+                                <div className="flex flex-1 items-center gap-6 md:flex-col md:self-stretch">
+                                  <div className="flex w-[26%] justify-center rounded-[92px] border-[1.16px] border-dashed border-black-900 p-2 md:w-full">
+                                    <div className="w-full rounded-[84px] bg-teal-300 p-[42px] md:p-5">
+                                      <Img
+                                        src="images/img_calendar.svg"
+                                        alt="Calendar"
+                                        className="h-[82px] w-[82px]"
+                                      />
                                     </div>
                                   </div>
+                                  <div className="h-[3.47px] flex-1 bg-gray-600 md:self-stretch" />
+                                  <Img
+                                    src="images/img_group_158.svg"
+                                    alt="Image"
+                                    className="h-[186px] w-[26%] object-contain md:w-full"
+                                  />
+                                  <div className="h-[3.47px] flex-1 bg-gray-600 md:self-stretch" />
                                 </div>
-                                <div className="mr-[26px] flex items-center gap-5 md:mr-0 md:flex-col">
-                                  <div className="flex w-full flex-col items-start gap-2.5">
-                                    <Heading
-                                      size="headinglg"
-                                      as="h3"
-                                      className="font-bevietnampro text-[23.12px] font-semibold text-gray-900_02 md:text-[21px]"
-                                    >
-                                      Book
-                                    </Heading>
-                                    <Text
-                                      size="textmd"
-                                      as="p"
-                                      className="font-bevietnampro text-[18.49px] font-normal leading-[150%] text-gray-700"
-                                    >
-                                      <>
-                                        Tell us when and where you <br />
-                                        want your cleaning
-                                      </>
-                                    </Text>
-                                  </div>
-                                  <div className="flex w-full flex-col items-center gap-2">
-                                    <Heading
-                                      size="headinglg"
-                                      as="h4"
-                                      className="font-bevietnampro text-[23.12px] font-semibold text-gray-900_02 md:text-[21px]"
-                                    >
-                                      Cleaning
-                                    </Heading>
-                                    <Text
-                                      size="textmd"
-                                      as="p"
-                                      className="self-stretch text-center font-bevietnampro text-[18.49px] font-normal leading-[150%] text-gray-700"
-                                    >
-                                      A professional cleaner comes over and
-                                      cleans your place.
-                                    </Text>
-                                  </div>
-                                  <div className="flex w-full flex-col items-end gap-2.5">
-                                    <Heading
-                                      size="headinglg"
-                                      as="h5"
-                                      className="font-bevietnampro text-[23.12px] font-semibold text-gray-900_02 md:text-[21px]"
-                                    >
-                                      Freedom
-                                    </Heading>
-                                    <Text
-                                      size="textmd"
-                                      as="p"
-                                      className="w-[84%] text-right font-bevietnampro text-[18.49px] font-normal leading-[150%] text-gray-700 md:w-full"
-                                    >
-                                      Enjoy your life and come back to a clean
-                                      space.
-                                    </Text>
+                                <div className="flex w-[18%] justify-center rounded-[92px] border-[1.16px] border-dashed border-black-900 p-2 md:w-full">
+                                  <div className="w-full rounded-[84px] bg-teal-300 px-[38px] py-10 sm:p-5">
+                                    <div className="flex flex-col gap-1.5">
+                                      <div className="flex items-center justify-end gap-[9px]">
+                                        <Img
+                                          src="images/img_signal.svg"
+                                          alt="Signal"
+                                          className="h-[24px] self-end"
+                                        />
+                                        <Img
+                                          src="images/img_signal_gray_200.svg"
+                                          alt="Signal"
+                                          className="h-[46px]"
+                                        />
+                                      </div>
+                                      <Img
+                                        src="images/img_user.svg"
+                                        alt="User"
+                                        className="h-[36px]"
+                                      />
+                                    </div>
                                   </div>
                                 </div>
                               </div>
+                              <div className="mr-[26px] flex items-center gap-5 md:mr-0 md:flex-col">
+                                <div className="flex w-full flex-col items-start gap-2.5">
+                                  <Heading
+                                    size="headinglg"
+                                    as="h3"
+                                    className="font-bevietnampro text-[23.12px] font-semibold text-gray-900_02 md:text-[21px]"
+                                  >
+                                    Book
+                                  </Heading>
+                                  <Text
+                                    size="textmd"
+                                    as="p"
+                                    className="font-bevietnampro text-[18.49px] font-normal leading-[150%] text-gray-700"
+                                  >
+                                    <>
+                                      Tell us when and where you <br />
+                                      want your cleaning
+                                    </>
+                                  </Text>
+                                </div>
+                                <div className="flex w-full flex-col items-center gap-2">
+                                  <Heading
+                                    size="headinglg"
+                                    as="h4"
+                                    className="font-bevietnampro text-[23.12px] font-semibold text-gray-900_02 md:text-[21px]"
+                                  >
+                                    Cleaning
+                                  </Heading>
+                                  <Text
+                                    size="textmd"
+                                    as="p"
+                                    className="self-stretch text-center font-bevietnampro text-[18.49px] font-normal leading-[150%] text-gray-700"
+                                  >
+                                    A professional cleaner comes over and cleans
+                                    your place.
+                                  </Text>
+                                </div>
+                                <div className="flex w-full flex-col items-end gap-2.5">
+                                  <Heading
+                                    size="headinglg"
+                                    as="h5"
+                                    className="font-bevietnampro text-[23.12px] font-semibold text-gray-900_02 md:text-[21px]"
+                                  >
+                                    Freedom
+                                  </Heading>
+                                  <Text
+                                    size="textmd"
+                                    as="p"
+                                    className="w-[84%] text-right font-bevietnampro text-[18.49px] font-normal leading-[150%] text-gray-700 md:w-full"
+                                  >
+                                    Enjoy your life and come back to a clean
+                                    space.
+                                  </Text>
+                                </div>
+                              </div>
                             </div>
-                            <Button className="flex h-[68px] min-w-[412px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px]">
-                              Get a free estimate now
-                            </Button>
                           </div>
+                          <Button className="flex h-[68px] min-w-[412px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px]">
+                            Get a free estimate now
+                          </Button>
                         </div>
-                        <div className="ml-72 mr-[268px] flex flex-col items-center md:mx-0">
-                          <Text
-                            size="text16xl"
-                            as="p"
-                            className="font-dmserifdisplay text-[107.79px] font-normal text-black-900_28 md:text-[48px]"
-                          >
-                            Testimonials
-                          </Text>
-                          <Text
-                            size="text5xl"
-                            as="p"
-                            className="relative mt-[-16px] text-[26.16px] font-normal capitalize text-gray-800 md:text-[24px] sm:text-[22px]"
-                          >
-                            Join Our List of Satisfied Customers!
-                          </Text>
-                        </div>
+                      </div>
+                      <div className="ml-72 mr-[268px] flex flex-col items-center md:mx-0">
+                        <Text
+                          size="text16xl"
+                          as="p"
+                          className="font-dmserifdisplay text-[107.79px] font-normal text-black-900_28 md:text-[48px]"
+                        >
+                          Testimonials
+                        </Text>
+                        <Text
+                          size="text5xl"
+                          as="p"
+                          className="relative mt-[-16px] text-[26.16px] font-normal capitalize text-gray-800 md:text-[24px] sm:text-[22px]"
+                        >
+                          Join Our List of Satisfied Customers!
+                        </Text>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
+              {/* </div> */}
             </div>
             <Home1Columnannettebl />
           </div>
+
           <div className="container-xs mt-[46px] flex flex-col items-end pl-14 pr-[558px] md:px-5">
             <div className="flex items-center justify-center">
               {[...Array(3)].map((_, i) => (
