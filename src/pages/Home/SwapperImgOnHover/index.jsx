@@ -1,7 +1,7 @@
 import React from "react";
 import { Img } from "components";
-import FirstImg from "./flipcard/img_ellipse_7.png";
-import SecondImg from "./flipcard/img_ellipse_8.svg";
+import SecondImg from "./flipcard/img_ellipse_7.png";
+import FirstImg from "./flipcard/img_ellipse_8.svg";
 export const SwapperImgOnHover = () => {
   return (
     <>

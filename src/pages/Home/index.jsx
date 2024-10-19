@@ -275,7 +275,7 @@ export default function Home1Page() {
           <Home1RowThree />
           <Home1Rowcommercial />
           <Home1RowFive />
-          <Scroll images={rowSix} speed={9000} />
+          <Scroll side={"left"} images={rowSix} speed={6000} />
           <Home1RowEight />
           <div className="mt-1.5 self-stretch justify-start">
             <div className="flex flex-col items-center justify-start">
@@ -328,7 +328,7 @@ export default function Home1Page() {
                       </div>
                     </div>
                   </div> */}
-                <Scroll images={rowSix} speed={9000} />
+                <Scroll side={"right"} images={rowSix} speed={6000} />
                 <div className="container-xs md:px-5">
                   <div>
                     <div className="mr-2 flex flex-col gap-[102px] md:mr-0 md:gap-[76px] sm:gap-[51px]">

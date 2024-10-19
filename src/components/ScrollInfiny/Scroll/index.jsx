@@ -1,6 +1,8 @@
-const Scroll = ({ images, speed = 5000 }) => {
+const Scroll = ({ side, images, speed = 5000 }) => {
   return (
-    <div class="stock-ticker mt-[152px] h-[104px] self-stretch bg-[url(/public/images/img_group_379.png)] bg-cover bg-no-repeat py-[26px] md:h-auto sm:py-5  ">
+    <div
+      class={`stock-ticker-${side} mt-[152px] h-[104px] self-stretch bg-[url(/public/images/img_group_379.png)] bg-cover bg-no-repeat py-[26px] md:h-auto sm:py-5 `}
+    >
       <ul aria-hidden="true">
         <div className="flex flex-row w-[100%]">
           <li class=" textSlider gap-20 w-[100%]">
