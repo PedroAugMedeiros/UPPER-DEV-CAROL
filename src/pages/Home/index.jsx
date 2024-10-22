@@ -81,7 +81,7 @@ export default function Home1Page() {
           content="Web site created using create-react-app"
         />
       </Helmet>
-      <div className="w-full bg-gray-200 unlockOverflow">
+      <div className="w-full bg-gray-200 ">
         <div className="flex flex-col items-center">
           <div className="relative h-[1868px] self-stretch">
             <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-end">
@@ -148,7 +148,7 @@ export default function Home1Page() {
                       }
                         ${
                           action === "leave" ? "growdown" : "bg-teal-300"
-                        } flex h-[56px] min-w-[242px] flex-row items-center justify-center rounded-[10px]  px-[18px] text-center text-[26.83px] text-gray-200 md:text-[24px] sm:text-[22px]`}
+                        } flex h-[56px] min-w-[242px] flex-row items-center justify-center rounded-[10px]  px-[18px] text-center text-[26.83px] text-gray-200 md:text-[24px] sm:text-[22px] z-0`}
                       onMouseEnter={handleHoverEnter}
                       onMouseLeave={handleHoverLeave}
                     >
@@ -287,7 +287,7 @@ export default function Home1Page() {
                 />
               </div>
 
-              <div className="mb-[382px] flex flex-col items-center gap-48 md:gap-36 sm:gap-24">
+              <div className="mb-10 flex flex-col items-center gap-48 md:gap-36 sm:gap-24">
                 {/* <div className="h-[104px] self-stretch bg-[url(/public/images/img_group_4.png)] bg-cover bg-no-repeat py-[26px] md:h-auto sm:py-5">
                     <div className="flex justify-center overflow-x-scroll md:flex-col">
                       <div className="flex w-[352px] px-2.5 md:px-5">
@@ -465,9 +465,14 @@ export default function Home1Page() {
                               </div>
                             </div>
                           </div>
-                          <Button className="flex h-[68px] min-w-[412px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px]">
-                            Get a free estimate now
-                          </Button>
+                          <a
+                            href="https://forms.gle/LNWMEL59EvRHchmH8"
+                            target="blank"
+                          >
+                            <Button className="flex h-[68px] min-w-[412px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px] growUpButton">
+                              Get a free estimate now
+                            </Button>
+                          </a>
                         </div>
                       </div>
                       <div className="ml-72 mr-[268px] flex flex-col items-center md:mx-0">

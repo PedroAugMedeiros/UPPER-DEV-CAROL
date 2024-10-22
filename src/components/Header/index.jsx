@@ -68,7 +68,7 @@ export default function Header({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex self-stretch w-[100%]   p-[22px] sm:p-5 z-[4] fixed bg-teal-100_4c justify-center items-start`}
+      className={`${props.className} flex self-stretch w-[100%]   p-[22px] sm:p-5  fixed bg-teal-100_4c items-start z-50 top-0 fixed`}
     >
       <div className="flex w-[100%] items-center justify-around  gap-5 md:flex-col">
         <div
@@ -119,7 +119,7 @@ export default function Header({ ...props }) {
                   size="textxs"
                   as="p"
                   id="Home"
-                  className="text-[15.39px] font-medium text-transparent hover:text-orange-300 hover:underline"
+                  className="text-lg font-medium text-transparent hover:text-orange-300 hover:underline"
                 >
                   Home
                 </Heading>
@@ -137,7 +137,7 @@ export default function Header({ ...props }) {
                   size="textxs"
                   as="p"
                   id="AboutUs"
-                  className="text-[15.39px] font-medium text-white-a700 hover:text-orange-300 hover:underline"
+                  className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline"
                 >
                   About us
                 </Heading>
@@ -156,7 +156,7 @@ export default function Header({ ...props }) {
                   size="textxs"
                   as="p"
                   id="Testimonials"
-                  className="text-[15.39px] font-medium text-white-a700 hover:text-orange-300 hover:underline"
+                  className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline"
                 >
                   Testimonials
                 </Heading>
@@ -179,7 +179,7 @@ export default function Header({ ...props }) {
                   onMouseLeave={(e) => handleHoverLeave(e)}
                   className={`${
                     actualMove === "Services" ? move : ""
-                  } cursor-pointer text-[15.39px] font-medium text-white-a700 hover:text-orange-300 hover:underline`}
+                  } cursor-pointer text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline`}
                 >
                   Services
                 </Heading>
@@ -205,7 +205,7 @@ export default function Header({ ...props }) {
                   onMouseLeave={(e) => handleHoverLeave(e)}
                   className={`${
                     actualMove === "Gallery" ? move : ""
-                  } text-[15.39px] font-medium text-white-a700 hover:text-orange-300 hover:underline`}
+                  } text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline`}
                 >
                   Gallery
                 </Heading>
@@ -221,7 +221,7 @@ export default function Header({ ...props }) {
                   onMouseLeave={(e) => handleHoverLeave(e)}
                   className={`${
                     actualMove === "Join Us" ? move : ""
-                  } text-[15.39px] font-medium text-white-a700 hover:text-orange-300 hover:underline`}
+                  } text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline`}
                 >
                   Join Us
                 </Heading>
@@ -237,7 +237,7 @@ export default function Header({ ...props }) {
             <Heading
               size="textxs"
               as="p"
-              className="bg-gradient bg-clip-text text-[15.66px] font-medium text-transparent"
+              className="bg-gradient bg-clip-text text-lg font-medium text-transparent"
             >
               FREE ESTIMATE
             </Heading>

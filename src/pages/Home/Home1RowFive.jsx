@@ -3,9 +3,9 @@ import React from "react";
 
 export default function Home1RowFive() {
   return (
-    <div className="mt-[76px] flex justify-center self-stretch px-14 md:px-5">
-      <div className="flex w-[88%] items-start justify-center bg-blue_gray-100_01 md:w-full md:flex-col">
-        <div className="mt-[52px] flex w-[40%] flex-col items-start md:w-full md:px-5">
+    <div className="mt-[76px] flex justify-start self-stretch  md:px-5">
+      <div className="flex w-[100%] items-start justify-end  bg-blue_gray-100_01 md:w-full md:flex-col">
+        <div className="flex justify-end mt-[52px]  w-[40%] flex-col md:w-full md:px-5">
           <Text
             size="text11xl"
             as="p"
@@ -28,13 +28,15 @@ export default function Home1RowFive() {
               you can enjoy more time with your loved ones in a spotless home.
             </>
           </Text>
-          <Button className="growUpButton mt-[26px] flex h-[52px] min-w-[314px] flex-row items-center justify-center rounded-[10px] bg-teal-300 px-[18px] text-center text-[25.14px] text-white-a700 md:text-[23px] sm:text-[21px]">
-            Get a free estimate now
-          </Button>
+          <a href="https://forms.gle/LNWMEL59EvRHchmH8" target="blank">
+            <Button className="growUpButton mt-[26px] flex h-[52px] min-w-[314px] flex-row items-center justify-center rounded-[10px] bg-teal-300 px-[18px] text-center text-[25.14px] text-white-a700 md:text-[23px] sm:text-[21px]">
+              Get a free estimate now
+            </Button>
+          </a>
         </div>
-        <div className="flex h-[520px] w-[50%] ">
-          <div className="flex w-[600px] self-stretch justify-center">
-            <div className="flex  w-[50%]">
+        <div className="flex h-[520px] w-[50%] justify-center">
+          <div className="flex w-[600px] self-stretch justify-end">
+            <div className="flex justify-end items-end  w-[50%]">
               <iframe
                 frameborder="0"
                 className="juxtapose self-stretch w-[140%]"

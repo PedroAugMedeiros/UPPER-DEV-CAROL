@@ -7,7 +7,7 @@ export default function Footer({ ...props }) {
   return (
     <footer
       {...props}
-      className={`${props.className} flex self-stretch items-end mt-[140px] py-4 bg-gray-900_01`}
+      className={`${props.className} absolut self-stretch items-end mt-[140px] py-4 bg-gray-900_01`}
     >
       <div className="mt-[38px] flex w-full flex-col items-end gap-4">
         <div className="self-stretch">
@@ -33,16 +33,27 @@ export default function Footer({ ...props }) {
                   </Heading>
                 </div>
                 <div className="mt-[18px] flex items-center gap-2.5">
-                  <Img
-                    src="images/img_facebook.svg"
-                    alt="Facebook"
-                    className="h-[22px]"
-                  />
-                  <Img
-                    src="images/img_info.svg"
-                    alt="Info"
-                    className="h-[24px] w-[24px]"
-                  />
+                  <a
+                    href="https://www.instagram.com/520cleaningsolutions/"
+                    target="blank"
+                  >
+                    <Img
+                      src="images/img_facebook.svg"
+                      alt="Facebook"
+                      className="h-[22px]"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/520cleaningsolutions/"
+                    target="blank"
+                  >
+                    {" "}
+                    <Img
+                      src="images/img_info.svg"
+                      alt="Info"
+                      className="h-[24px] w-[24px] "
+                    />
+                  </a>
                 </div>
                 <a
                   href="#"
