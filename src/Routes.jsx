@@ -10,7 +10,7 @@ import MoveInAndMoveOut from "./pages/MoveInAndMoveOut/index";
 import TermsAndConditions from "./pages/TermsAndConditions/index";
 
 import RegularCleaning from "./pages/RegularCleaning/index";
-import AboutusPage from "./pages/Home";
+import AboutusPage from "./pages/Aboutus";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
