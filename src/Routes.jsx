@@ -10,11 +10,12 @@ import MoveInAndMoveOut from "pages/MoveInAndMoveOut/index";
 import TermsAndConditions from "pages/TermsAndConditions/index";
 
 import RegularCleaning from "./pages/RegularCleaning/index";
+import AboutusPage from "pages/Aboutus/index";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/AboutUs", element: <AboutUs /> },
+    { path: "/AboutUs", element: <AboutusPage /> },
     { path: "/DeepCleaning", element: <DeepCleaning /> },
     { path: "/CommercialCleaning", element: <CommercialCleaning /> },
     { path: "/JoinUs", element: <JoinUs /> },
