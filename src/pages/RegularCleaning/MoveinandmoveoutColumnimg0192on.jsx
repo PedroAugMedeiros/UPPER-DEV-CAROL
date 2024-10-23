@@ -31,7 +31,7 @@ const data = [
 export default function MoveinandmoveoutColumnimg0192on() {
   return (
     <div className="mt-[136px] self-stretch">
-      <div className=" grid grid-cols-3 gap-x-4  gap-y-[46px] md:mr-0 md:grid-cols-2 sm:grid-cols-1 w-[120%]">
+      <div className=" grid grid-cols-3 gap-x-4  gap-y-[46px] md:mr-0 md:grid-cols-2 sm:grid-cols-1 w-[100%]">
         <Suspense fallback={<div>Loading feed...</div>}>
           {data.map((d, index) => (
             <ImageGallery firstImage={d.firstImage} />

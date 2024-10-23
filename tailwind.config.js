@@ -1,12 +1,19 @@
 module.exports = {
   mode: "jit",
-  content: ["./src/**/**/*.{js,ts,jsx,tsx,html,mdx}", "./src/**/*.{js,ts,jsx,tsx,html,mdx}"],
+  content: [
+    "./src/**/**/*.{js,ts,jsx,tsx,html,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,html,mdx}",
+  ],
   darkMode: "class",
   theme: {
     screens: { md: { max: "1050px" }, sm: { max: "550px" } },
     extend: {
       colors: {
-        amber: { 200: "var(--amber_200)", 500: "var(--amber_500)", a100: "var(--amber_a100)" },
+        amber: {
+          200: "var(--amber_200)",
+          500: "var(--amber_500)",
+          a100: "var(--amber_a100)",
+        },
         black: {
           600: "var(--black_600)",
           900: "var(--black_900)",
@@ -85,6 +92,7 @@ module.exports = {
       backgroundImage: {
         gradient: "linear-gradient(180deg, #d8b75a,#ffe396)",
         gradient1: "linear-gradient(180deg, #fae37d,#d8b75a)",
+        gradienteBlue: "linear-gradient(90deg, #539B9B 0%, #B6F4F4 100%)",
       },
     },
   },

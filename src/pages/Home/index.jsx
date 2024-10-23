@@ -17,6 +17,7 @@ import { MenuTypeServices } from "components/MenuTypeServices";
 import { MenuFrequencyServices } from "components/MenuFrequencyServices";
 import { useNavigate } from "react-router-dom";
 import { Scroll } from "components/ScrollInfiny/Scroll/index.jsx";
+import AboutusPage from "pages/Aboutus/index";
 
 const dropDownOptions = [
   { label: "Option1", value: "option1" },
@@ -69,7 +70,7 @@ export default function Home1Page() {
   }, [defaultDate]);
 
   const goToAboutUs = () => {
-    navigate("/AboutUs");
+    navigate(<AboutusPage />);
   };
 
   return (
@@ -469,17 +470,24 @@ export default function Home1Page() {
                             href="https://forms.gle/LNWMEL59EvRHchmH8"
                             target="blank"
                           >
-                            <Button className="flex h-[68px] min-w-[412px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px] growUpButton">
+                            <Button
+                              id="TestimonialsTarget"
+                              className="flex h-[68px] min-w-[412px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px] growUpButton"
+                            >
                               Get a free estimate now
                             </Button>
                           </a>
                         </div>
                       </div>
-                      <div className="ml-72 mr-[268px] flex flex-col items-center md:mx-0">
+                      <div
+                        id=""
+                        className=" ml-72 mr-[268px] flex flex-col items-center md:mx-0"
+                      >
                         <Text
+                          id=""
                           size="text16xl"
                           as="p"
-                          className="font-dmserifdisplay text-[107.79px] font-normal text-black-900_28 md:text-[48px]"
+                          className=" font-dmserifdisplay text-[107.79px] font-normal text-black-900_28 md:text-[48px]"
                         >
                           Testimonials
                         </Text>

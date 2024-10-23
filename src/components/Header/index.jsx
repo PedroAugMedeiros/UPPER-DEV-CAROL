@@ -2,7 +2,7 @@ import { element } from "prop-types";
 import MegaMenu1 from "../MegaMenu1";
 import { SelectBox, Img, Heading, Text } from "./..";
 import React from "react";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, actualP } from "react";
 import PortugueseLogo from "./Icons/img_ellipse_1.png";
 import MenuServices from "./../MenuServices/index";
 import { SelectLanguage } from "components/SelectLanguage";
@@ -107,26 +107,47 @@ export default function Header({ ...props }) {
         <div className="flex flex-1 justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01  md:flex-col md:self-stretch">
           <ul className="flex gap-[30px] sm:flex-col">
             <li>
-              <a
-                href="#"
-                onMouseEnter={(e) => handleHoverEnter(e)}
-                onMouseLeave={(e) => handleHoverLeave(e)}
-                className={`${
-                  actualMove === "Home" ? move : ""
-                } bg-gradient bg-clip-text`}
-              >
-                <Heading
-                  size="textxs"
-                  as="p"
-                  id="Home"
-                  className="text-lg font-medium text-transparent hover:text-orange-300 hover:underline"
+              {window.location.pathname === "/Home" ? (
+                <a
+                  href="#"
+                  onMouseEnter={(e) => handleHoverEnter(e)}
+                  onMouseLeave={(e) => handleHoverLeave(e)}
+                  className={`${
+                    actualMove === "Home" ? move : ""
+                  } bg-gradient bg-clip-text`}
                 >
-                  Home
-                </Heading>
-              </a>
+                  <Heading
+                    size="textxs"
+                    as="p"
+                    id="Home"
+                    className="text-lg font-medium text-transparent hover:text-orange-300 hover:underline"
+                  >
+                    Home
+                  </Heading>
+                </a>
+              ) : (
+                <a
+                  href="/Home"
+                  onMouseEnter={(e) => handleHoverEnter(e)}
+                  onMouseLeave={(e) => handleHoverLeave(e)}
+                  className={`${
+                    actualMove === "Home" ? move : ""
+                  } bg-gradient bg-clip-text`}
+                >
+                  <Heading
+                    size="textxs"
+                    as="p"
+                    id="Home"
+                    className="text-lg font-medium text-transparent hover:text-orange-300 hover:underline"
+                  >
+                    Home
+                  </Heading>
+                </a>
+              )}
             </li>
             <li>
               <a
+                href="/AboutUs"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
                 className={`${
@@ -145,7 +166,7 @@ export default function Header({ ...props }) {
             </li>
             <li>
               <a
-                id="Testimonials"
+                href="#TestimonialsTarget"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
                 className={`${
@@ -155,7 +176,7 @@ export default function Header({ ...props }) {
                 <Heading
                   size="textxs"
                   as="p"
-                  id="Testimonials"
+                  id=""
                   className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline"
                 >
                   Testimonials

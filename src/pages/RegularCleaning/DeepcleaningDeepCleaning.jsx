@@ -71,7 +71,7 @@ const data = [
 
 export default function DeepcleaningDeepCleaning() {
   return (
-    <div className=" mt-[40%] grid w-full max-w-[1240px] grid-cols-2 justify-center gap-[26px] self-stretch md:grid-cols-1 md:px-5">
+    <div className="flex  grid w-full max-w-[1240px] grid-cols-2 justify-center gap-[26px] md:grid-cols-1 md:px-5 justify-center items-center">
       <Suspense fallback={<div>Loading feed...</div>}>
         {data.map((d, index) => (
           <HouseCleaningDetails

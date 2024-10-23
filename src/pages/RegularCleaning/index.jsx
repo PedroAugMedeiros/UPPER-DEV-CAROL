@@ -18,20 +18,15 @@ export default function MoveinandmoveoutPage() {
           content="Web site created using create-react-app"
         />
       </Helmet>
-      <div className="relative h-[3948px] w-full overflow-auto bg-gray-200 md:h-auto">
-        <div className="mt-[62px] flex flex-1 flex-col items-center justify-center contain-content">
+      <div className="relative w-full  bg-gray-200 ">
+        <div className="mt-[62px] flex flex-1 flex-col items-center justify-center content">
           <Img
             src={PrincipalBanner}
             alt="Moveinand"
             className="relative  h-[730px] w-full object-cover "
           />
-          <Img
-            // src="images/img_image_2.png"
-            alt="Imagetwo"
-            className="relative mt-[-218px] h-[1056px] w-[44%] object-contain opacity-50"
-          />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 top-0 z-[2] m-auto flex h-max w-full flex-col items-start">
+        <div className="flex flex-col bottom-0 left-0 right-0 top-0 z-[2] m-auto flex h-max w-full flex-col mt-[2%] justify-center items-center">
           <Header />
           <DeepcleaningDeepCleaning />
           <MoveinandmoveoutColumngetYour />

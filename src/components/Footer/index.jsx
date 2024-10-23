@@ -1,8 +1,36 @@
 import { Heading, Img, Text } from "./..";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import AboutUsPage from "../../pages/Aboutus/index";
+import Home from "../../pages/Home/index";
+import RegularCleaning from "../../pages/RegularCleaning/index";
+import { getFID } from "web-vitals";
+import MoveInAndMoveOut from "../../pages/MoveInAndMoveOut/index";
+import CommercialCleaning from "pages/CommercialCleaning/index";
 
 export default function Footer({ ...props }) {
   const [showServices, setShowServices] = useState(false);
+  const navigate = useNavigate();
+  const goTo = (value) => {
+    console.log(value);
+    switch (value) {
+      case "Home":
+        navigate(<Home />);
+      case "AboutUs":
+        navigate(<AboutUsPage />);
+      case "RegularCleaning":
+        navigate(<RegularCleaning />);
+      case "CommercialCleaning":
+        navigate(<CommercialCleaning />);
+      case "Movecleaning":
+        navigate(<MoveInAndMoveOut />);
+      case "About Us":
+        navigate(<AboutUsPage />);
+
+      default:
+        navigate(<AboutUsPage />);
+    }
+  };
   console.log(showServices);
   return (
     <footer
@@ -59,13 +87,15 @@ export default function Footer({ ...props }) {
                   href="#"
                   className="mt-[54px] w-[60%] italic leading-[23px] md:w-full md:text-[22px]"
                 >
-                  <Text
-                    size="text3xl"
-                    as="p"
-                    className="text-[24.57px] font-normal uppercase text-gray-500_01"
-                  >
-                    Terms and conditions
-                  </Text>
+                  <a href="/TermsAndConditions">
+                    <Text
+                      size="text3xl"
+                      as="p"
+                      className="text-[24.57px] font-normal uppercase text-gray-500_01"
+                    >
+                      Terms and conditions
+                    </Text>
+                  </a>
                 </a>
               </div>
               <div className="mb-6 flex w-[66%] items-start justify-between gap-5 md:w-full md:flex-col">
@@ -84,7 +114,7 @@ export default function Footer({ ...props }) {
                     </Heading>
                     <ul className="flex flex-col items-start gap-3.5">
                       <li>
-                        <a href="#">
+                        <a id="RegularCleaning" href="">
                           <Text
                             size="textlg"
                             as="p"
@@ -95,7 +125,7 @@ export default function Footer({ ...props }) {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a id="DeepCleaning" href="DeepCleaning">
                           <Text
                             size="textlg"
                             as="p"
@@ -106,7 +136,7 @@ export default function Footer({ ...props }) {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a id="CommercialCleaning" href="">
                           <Text
                             size="textlg"
                             as="p"
@@ -117,7 +147,7 @@ export default function Footer({ ...props }) {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="MoveInAndMoveOut" id="Movecleaning">
                           <Text
                             size="textlg"
                             as="p"
@@ -128,7 +158,7 @@ export default function Footer({ ...props }) {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a href="MoveInAndMoveOut" id="MovecleaningOut">
                           <Text
                             size="textlg"
                             as="p"
@@ -150,7 +180,7 @@ export default function Footer({ ...props }) {
                     </Heading>
                     <ul className="flex flex-col items-start gap-3.5">
                       <li>
-                        <a href="Home" target="_blank" rel="noreferrer">
+                        <a id="Home" href="Home">
                           <Text
                             size="textlg"
                             as="p"
@@ -172,7 +202,7 @@ export default function Footer({ ...props }) {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a id="AboutUs" href="AboutUs">
                           <Text
                             size="textlg"
                             as="p"
@@ -183,7 +213,7 @@ export default function Footer({ ...props }) {
                         </a>
                       </li>
                       <li>
-                        <a href="#">
+                        <a id="ContactUs" onClick={(e) => goTo("ContactUs")}>
                           <Text
                             size="textlg"
                             as="p"

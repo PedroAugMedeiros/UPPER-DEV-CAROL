@@ -5,6 +5,13 @@
   margin: unset;
 }
 
+html {
+
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   display: block;
@@ -508,5 +515,14 @@ display: grid; place-items: center;
 background: var(--MIDDLE-CYAN, #539B9B);
 box-shadow: 10px 9px 24.6px 0px rgba(0, 0, 0, 0.25);
 color: #FFF !important;
+text-decoration: none;
 } 
 
+.makeTextWhite:hover {
+  color: #fff !important;
+}
+
+#iconfirmthatiha {
+  text-align: center;
+  top: 2%!important;
+}
