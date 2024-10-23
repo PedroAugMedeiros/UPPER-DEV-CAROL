@@ -43,6 +43,7 @@ function App() {
         <Route path="/" element={<Home />}></Route>
         <Route path="/Home" element={<Home />}></Route>
         <Route path="./DeepCleaning" element={<DeepCleaning />}></Route>
+        <Route path="DeepCleaning" element={<DeepCleaning />}></Route>
         {/* <Route path="/DeepCleaning" element={<DeepCleaning />}></Route>
         <Route path="/DeepCleaning" element={<DeepCleaning />}></Route>
         <Route path="/DeepCleaning" element={<DeepCleaning />}></Route> */}
