@@ -1,18 +1,26 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from "./pages/Home";
+import DeepCleaning from "./pages/Deepcleaning";
 
-import { createRoot } from "react-dom/client";
 import App from "./App";
 
 import "./styles/tailwind.css";
 import "./styles/index.css";
 import "./styles/font.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+    path: "/DeepCleaning",
+    element: <DeepCleaning />,
+  },
+]);
 
-root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
