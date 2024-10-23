@@ -3,15 +3,15 @@ import { Routes, Route } from "react-router-dom";
 import { useRoutes } from "react-router-dom";
 import NotFound from "pages/NotFound";
 import Home from "pages/Home";
-import AboutUs from "pages/Aboutus/index";
-import DeepCleaning from "pages/Deepcleaning/index";
+import AboutUs from "./pages/Aboutus/index";
+import DeepCleaning from "./pages/Deepcleaning";
 import CommercialCleaning from "pages/CommercialCleaning/index";
 import JoinUs from "pages/JoinUs/index";
 import MoveInAndMoveOut from "pages/MoveInAndMoveOut/index";
 import TermsAndConditions from "pages/TermsAndConditions/index";
 
 import RegularCleaning from "./pages/RegularCleaning/index";
-import AboutusPage from "pages/Home";
+import AboutusPage from "./pages/Home";
 
 // const ProjectRoutes = () => {
 //   let element = useRoutes([
@@ -38,7 +38,7 @@ import AboutusPage from "pages/Home";
 // };
 function App() {
   return (
-    <div className="">
+    <div className="root">
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/Home" element={<Home />}></Route>
