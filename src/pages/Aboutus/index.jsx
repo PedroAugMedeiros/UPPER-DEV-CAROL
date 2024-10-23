@@ -8,7 +8,7 @@ import React from "react";
 
 export default function AboutusPage() {
   return (
-    <>
+    <React.Fragment>
       <div className="mt-0 relative  w-full content-end bg-gray-200 md:h-auto">
         <Img
           src="images/img_image_2.png"
@@ -22,6 +22,6 @@ export default function AboutusPage() {
           <Footer />
         </div>
       </div>
-    </>
+    </React.Fragment>
   );
 }
