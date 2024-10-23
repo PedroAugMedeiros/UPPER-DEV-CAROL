@@ -13,11 +13,11 @@ import Home1RowThree from "./Home1RowThree";
 import Home1Rowcommercial from "./Home1Rowcommercial";
 import Home1Rowcontactinfo from "./Home1Rowcontactinfo";
 import React, { useEffect, useState } from "react";
-import { MenuTypeServices } from "components/MenuTypeServices";
-import { MenuFrequencyServices } from "components/MenuFrequencyServices";
+import { MenuTypeServices } from "../../components/MenuTypeServices";
+import { MenuFrequencyServices } from "../../components/MenuFrequencyServices";
 import { useNavigate } from "react-router-dom";
-import { Scroll } from "components/ScrollInfiny/Scroll/index.jsx";
-import AboutusPage from "pages/Aboutus/index";
+import { Scroll } from "../../components/ScrollInfiny/Scroll/index.jsx";
+import AboutusPage from "../../pages/Aboutus/index";
 
 const dropDownOptions = [
   { label: "Option1", value: "option1" },

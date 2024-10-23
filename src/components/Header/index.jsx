@@ -5,8 +5,8 @@ import React from "react";
 import { useState, useEffect, useRef, actualP } from "react";
 import PortugueseLogo from "./Icons/img_ellipse_1.png";
 import MenuServices from "./../MenuServices/index";
-import { SelectLanguage } from "components/SelectLanguage";
-import { languageOptions } from "./../../tools/options";
+import { SelectLanguage } from "../../components/SelectLanguage";
+import { languageOptions } from "../../tools/options";
 import { MenuLanguage } from "../MenuLanguage/index";
 import { ActualLanguage } from "../ActualLanguage/index";
 

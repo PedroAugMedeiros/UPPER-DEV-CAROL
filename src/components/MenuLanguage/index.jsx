@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes, { func } from "prop-types";
-import { Img } from "components";
-import { languageOptions } from "tools/options";
-import PortugueseLogo from "components/Header/Icons/img_ellipse_1.png";
-import SpanishLogo from "components/LanguageIcons/SpanishIcon.svg";
-import EnglishLogo from "components/LanguageIcons/EnglishLogo.svg";
+import { Img } from "../../components";
+import { languageOptions } from "../../tools/options";
+import PortugueseLogo from "../../components/Header/Icons/img_ellipse_1.png";
+import SpanishLogo from "../../components/LanguageIcons/SpanishIcon.svg";
+import EnglishLogo from "../../components/LanguageIcons/EnglishLogo.svg";
 
 const MenuLanguage = ({
   children,

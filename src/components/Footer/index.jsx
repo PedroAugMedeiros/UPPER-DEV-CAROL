@@ -6,7 +6,7 @@ import Home from "../../pages/Home/index";
 import RegularCleaning from "../../pages/RegularCleaning/index";
 import { getFID } from "web-vitals";
 import MoveInAndMoveOut from "../../pages/MoveInAndMoveOut/index";
-import CommercialCleaning from "pages/CommercialCleaning/index";
+import CommercialCleaning from "../../pages/CommercialCleaning/index";
 
 export default function Footer({ ...props }) {
   const [showServices, setShowServices] = useState(false);

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { Heading, Img } from "../../components";
-import { CheckBox } from "components/CheckBox";
+import { CheckBox } from "../../components/CheckBox";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 import TermsandconditionsRowlinetwentyon from "./TermsandconditionsRowlinetwentyon";

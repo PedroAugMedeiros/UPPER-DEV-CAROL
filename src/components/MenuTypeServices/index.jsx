@@ -1,10 +1,10 @@
 import { Text } from "..";
 import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-import { Img } from "components";
-import PortugueseLogo from "components/Header/Icons/img_ellipse_1.png";
-import SpanishLogo from "components/LanguageIcons/SpanishIcon.svg";
-import EnglishLogo from "components/LanguageIcons/EnglishLogo.svg";
+import { Img } from "../../components";
+import PortugueseLogo from "../../components/Header/Icons/img_ellipse_1.png";
+import SpanishLogo from "../../components/LanguageIcons/SpanishIcon.svg";
+import EnglishLogo from "../../components/LanguageIcons/EnglishLogo.svg";
 
 const MenuTypeServices = ({
   children,
