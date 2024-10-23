@@ -1,0 +1,91 @@
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/KarlaItalic.ttf");
+  font-family: "Karla";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/DMSansMedium.ttf");
+  font-family: "DM Sans";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/DMSerifDisplayRegular.ttf");
+  font-family: "DM Serif Display";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/DMSansRegular.ttf");
+  font-family: "DM Sans";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/BeVietnamProSemiBold.ttf");
+  font-family: "Be Vietnam Pro";
+  font-weight: 600;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/BeVietnamProRegular.ttf");
+  font-family: "Be Vietnam Pro";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/RobotoRegular.ttf");
+  font-family: "Roboto";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/DMSansBold.ttf");
+  font-family: "DM Sans";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/BeVietnamProBold.ttf");
+  font-family: "Be Vietnam Pro";
+  font-weight: 700;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/DMSansItalic.ttf");
+  font-family: "DM Sans";
+  font-weight: 400;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/MontserratRomanSemiBold.ttf");
+  font-family: "Montserrat";
+  font-weight: 600;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/BeVietnamProMedium.ttf");
+  font-family: "Be Vietnam Pro";
+  font-weight: 500;
+}
+@font-face {
+  font-display: swap;
+  font-style: normal;
+  src: url("/public/fonts/Kameron.ttf");
+  font-family: "Kameron";
+  font-weight: 400;
+}
