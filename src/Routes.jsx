@@ -15,7 +15,7 @@ import AboutusPage from "./pages/Aboutus";
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/", element: <Home /> },
-    { path: "/AboutUs", element: <AboutusPage /> },
+    { path: "/x", element: <AboutusPage /> },
     { path: "/DeepCleaning", element: <DeepCleaning /> },
     { path: "/CommercialCleaning", element: <CommercialCleaning /> },
     { path: "/JoinUs", element: <JoinUs /> },
