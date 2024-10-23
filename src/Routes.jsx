@@ -27,6 +27,10 @@ const ProjectRoutes = () => {
       path: "home",
       element: <Home />,
     },
+    {
+      path: "AboutUs",
+      element: <Home />,
+    },
   ]);
 
   return element;
