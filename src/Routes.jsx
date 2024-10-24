@@ -58,7 +58,9 @@ export default function Routesx() {
       <Routes>
         {/* <Route exact path="/" component={Home} /> */}
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/DeepCleaning" element={<DeepCleaning />} />
+        <Route path="/DeepCleaning">
+          <DeepCleaning />
+        </Route>
         {/* <Route exact path="/kid/detail/:id" component={KidDashboard} />
         <Route
           exact
