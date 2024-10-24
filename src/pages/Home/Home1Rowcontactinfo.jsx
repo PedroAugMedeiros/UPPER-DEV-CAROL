@@ -120,7 +120,7 @@ export default function Home1Rowcontactinfo() {
               type="text"
               name="text"
               placeholder={`Name`}
-              className="flex h-[64px] items-center justify-center rounded border-[1.15px] border-solid border-gray-100_01 bg-white-a700 px-[22px] font-bevietnampro text-[18.43px] text-gray-700 sm:px-5"
+              className="flex h-[64px] items-center justify-center rounded  border-solid border-gray-100_01 bg-white-a700 px-[22px] font-bevietnampro text-[18.43px] text-gray-700 sm:px-5"
               onChange={(e) => setName(e.target.value)}
               value={name}
               required
@@ -129,7 +129,7 @@ export default function Home1Rowcontactinfo() {
               type="email"
               name="user_email"
               placeholder={`Email`}
-              className="flex h-[64px] items-center justify-center rounded border-[1.15px] border-solid border-gray-100_01 bg-white-a700 px-[22px] font-bevietnampro text-[18.43px] text-gray-700 sm:px-5"
+              className="flex h-[64px] items-center justify-center rounded border-none outline-none bg-white-a700 px-[22px] font-bevietnampro text-[18.43px] text-gray-700 sm:px-5"
               onChange={(e) => setEmail(e.target.value)}
               value={email}
               required

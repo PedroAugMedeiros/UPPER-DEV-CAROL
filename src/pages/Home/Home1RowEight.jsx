@@ -72,7 +72,7 @@ export default function Home1RowEight() {
                   </div> */}
                   <SwapperImgOnHover />
 
-                  <div className="absolute bottom-0 left-0 right-0 top-0 m-auto h-[524px] flex-1 rounded-[272px] border-4 border-solid border-blue_gray-100_01 shadow-lg" />
+                  <div className="absolute bottom-0 left-0 right-0 top-0 m-auto  flex-1 rounded-full border-4 border-solid border-blue_gray-100_01 shadow-lg" />
                 </div>
                 <div className="mt-[124px] flex w-[24%] flex-col items-center md:w-full">
                   <Heading

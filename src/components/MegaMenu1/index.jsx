@@ -31,9 +31,9 @@ export default function ServicesMenu() {
             <div className="flex flex-col items-start gap-0 sm:gap-3">
               <div className="mt-8"></div>
               <a
+                href="/CommercialCleaning"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
-                href="#"
                 className="flex w-[140%] sm:text-[13px] m-0 p-0 mr-0"
               >
                 <h1
@@ -43,9 +43,9 @@ export default function ServicesMenu() {
                 </h1>
               </a>
               <a
+                href="/RegularCleaning"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
-                href="#"
                 className="flex w-[140%] sm:text-[13px] m-0 p-0 mr-0"
               >
                 <h1
@@ -55,9 +55,9 @@ export default function ServicesMenu() {
                 </h1>
               </a>
               <a
+                href="/DeepCleaning"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
-                href="#"
                 className="flex w-[140%] sm:text-[13px] m-0 p-0 mr-0"
               >
                 <h1
@@ -67,9 +67,9 @@ export default function ServicesMenu() {
                 </h1>
               </a>
               <a
+                href="MoveInAndMoveOut"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
-                href="#"
                 className="flex w-[140%] sm:text-[13px] m-0 p-0 mr-0"
               >
                 <h1
@@ -79,9 +79,9 @@ export default function ServicesMenu() {
                 </h1>
               </a>
               <a
+                href="MoveInAndMoveOut"
                 onMouseEnter={(e) => handleHoverEnter(e)}
                 onMouseLeave={(e) => handleHoverLeave(e)}
-                href="#"
                 className="flex w-[140%] sm:text-[13px] m-0 p-0 mr-0"
               >
                 <h1

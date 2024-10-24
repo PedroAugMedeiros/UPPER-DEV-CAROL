@@ -70,7 +70,7 @@ export default function Header({ ...props }) {
       {...props}
       className={`${props.className} flex self-stretch w-[100%]   p-[22px] sm:p-5  fixed bg-teal-100_4c items-start z-50 top-0 fixed`}
     >
-      <div className="flex w-[100%] items-center justify-around  gap-5 md:flex-col">
+      <div className="flex w-[100%] items-center justify-around  gap-5 ">
         <div
           onClick={() => {
             getPageYAfterScroll();
@@ -104,7 +104,7 @@ export default function Header({ ...props }) {
             Solutions
           </Text>
         </div>
-        <div className="flex flex-1 justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01  md:flex-col md:self-stretch">
+        <div className="flex flex-1 w-[40%] justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01   md:self-stretch flex-nowrap">
           <ul className="flex gap-[30px] sm:flex-col">
             <li>
               {window.location.pathname === "/Home" ? (
@@ -158,7 +158,7 @@ export default function Header({ ...props }) {
                   size="textxs"
                   as="p"
                   id="AboutUs"
-                  className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline"
+                  className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline inline-block flex-nowrap text-nowrap"
                 >
                   About us
                 </Heading>
@@ -217,23 +217,23 @@ export default function Header({ ...props }) {
               </div>
             </li>
             <li>
-              <a href="#" className="cursor-pointer">
+              <a href="/Contact" className="cursor-pointer">
                 <Heading
                   size="textxs"
                   as="p"
-                  id="Gallery"
+                  id="Contact"
                   onMouseEnter={(e) => handleHoverEnter(e)}
                   onMouseLeave={(e) => handleHoverLeave(e)}
                   className={`${
-                    actualMove === "Gallery" ? move : ""
+                    actualMove === "Contact" ? move : ""
                   } text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline`}
                 >
-                  Gallery
+                  Contact
                 </Heading>
               </a>
             </li>
             <li>
-              <a href="#" className=" cursor-pointer">
+              <a href="JoinUs" className=" cursor-pointer">
                 <Heading
                   size="textxs"
                   as="p"
@@ -242,7 +242,7 @@ export default function Header({ ...props }) {
                   onMouseLeave={(e) => handleHoverLeave(e)}
                   className={`${
                     actualMove === "Join Us" ? move : ""
-                  } text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline`}
+                  } text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline inline-block flex-nowrap text-nowrap`}
                 >
                   Join Us
                 </Heading>
@@ -258,7 +258,7 @@ export default function Header({ ...props }) {
             <Heading
               size="textxs"
               as="p"
-              className="bg-gradient bg-clip-text text-lg font-medium text-transparent"
+              className="bg-gradient bg-clip-text text-lg font-medium text-transparent inline-block flex-nowrap text-nowrap"
             >
               FREE ESTIMATE
             </Heading>
