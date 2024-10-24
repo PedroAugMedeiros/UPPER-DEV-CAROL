@@ -1,13 +1,9 @@
 import React from "react";
-import Routes from "./Routes";
+import Routesx from "./Routes";
 import { BrowserRouter, HashRouter } from "react-router-dom";
 
 function App() {
-  return (
-    <HashRouter>
-      <Routes />
-    </HashRouter>
-  );
+  return <Routesx />;
 }
 
 export default App;
