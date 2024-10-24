@@ -18,16 +18,11 @@ import "./styles/font.css";
 import Home from "./pages/Home";
 import DeepCleaning from "./pages/Deepcleaning";
 // import Root from "./routes/root";
+import App from "./App";
 
 const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/Deepcleaning",
-    element: <DeepCleaning />,
-  },
+  { path: "/", element: <Home /> },
+  { path: "/deepcleaning", element: <DeepCleaning /> },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
