@@ -70,7 +70,7 @@ export default function Header({ ...props }) {
       {...props}
       className={`${props.className} flex self-stretch w-[100%]   p-[22px] sm:p-5  fixed bg-teal-100_4c items-start z-50 top-0 fixed`}
     >
-      <div className="flex w-[100%] items-center justify-around  gap-5 ">
+      <div className="flex w-[100%] items-center justify-around  gap-5 md:flex-col">
         <div
           onClick={() => {
             getPageYAfterScroll();
@@ -104,7 +104,7 @@ export default function Header({ ...props }) {
             Solutions
           </Text>
         </div>
-        <div className="flex flex-1 w-[40%] justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01   md:self-stretch flex-nowrap">
+        <div className="flex flex-1 justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01  md:flex-col md:self-stretch flex-nowrap">
           <ul className="flex gap-[30px] sm:flex-col">
             <li>
               {window.location.pathname === "/Home" ? (

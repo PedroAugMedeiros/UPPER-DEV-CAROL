@@ -7,6 +7,7 @@ import MoveInAndMoveOut from "./pages/MoveInAndMoveOut/index";
 import RegularCleaning from "./pages/RegularCleaning/index";
 import TermsAndConditions from "./pages/TermsAndConditions/index";
 import AboutUs from "./pages/Aboutus/index";
+import Contact from "./pages/Contact/index";
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -23,6 +24,8 @@ const router = createBrowserRouter([
   { path: "/Home", element: <Home /> },
   { path: "/JoinUs", element: <JoinUs /> },
   { path: "/AboutUs", element: <AboutUs /> },
+  { path: "/Contact", element: <Contact /> },
+
   { path: "/CommercialCleaning", element: <CommercialCleaning /> },
   { path: "/RegularCleaning", element: <RegularCleaning /> },
   { path: "/MoveInAndMoveOut", element: <MoveInAndMoveOut /> },

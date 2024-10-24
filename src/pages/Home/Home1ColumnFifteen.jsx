@@ -679,11 +679,11 @@ export default function Home1ColumnFifteen() {
               solutions to meet your needs.
             </>
           </Text>
-          <a href="https://forms.gle/LNWMEL59EvRHchmH8" target="blank">
-            <Button className="flex h-[68px] min-w-[326px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px] growUpButton">
+          {/* <a href="https://forms.gle/LNWMEL59EvRHchmH8" target="blank">
+            <Button className="flex h-[68px] min-w-[326px] flex-row items-center justify-center rounded-[14px] bg-teal-300 px-6 text-center text-[33.03px] text-white-a700 md:text-[31px] sm:px-5 sm:text-[29px] growUpButton text-gray-900 font-bevietnampro absolute left-0 right-0 top-[23%] m-auto w-[64%] font-bevietnampro text-[22.91px] font-extrabold leading-[160%] text-gray-700 text-[22px] font-semibold sm:text-[18px]">
               Get a quote today
             </Button>
-          </a>
+          </a> */}
           <div className="mx-4 flex flex-col items-center gap-[52px] self-stretch md:mx-0 sm:gap-[26px]">
             <Text
               size="text12xl"
