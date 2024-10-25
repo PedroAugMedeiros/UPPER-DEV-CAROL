@@ -526,3 +526,21 @@ text-decoration: none;
   text-align: center;
   top: 2%!important;
 }
+
+.ContactInfo {
+  color: var(--DARK-GREEN, #001B1B);
+  font-family: "Be Vietnam Pro";
+
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 75.599px */
+}
+
+.Sendmessage {
+  color: var(--DARK-GREEN, #001B1B);
+font-family: "Be Vietnam Pro";
+font-style: normal;
+font-weight: 400;
+
+width: 751px;
+}

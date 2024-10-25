@@ -43,7 +43,7 @@ const MenuFrequencyServices = ({
                 <h1
                   className={`flex w-[100%]  text-[100%] text-transparent p-3 pr-4 pl-8 textTypeServices text-md`}
                 >
-                  Commercial Cleaning
+                  Weekly Cleaning
                 </h1>
               </li>
               <li
@@ -55,7 +55,7 @@ const MenuFrequencyServices = ({
                 <h1
                   className={`flex w-[100%]  text-[110%] text-transparent p-3 pr-4 pl-8 textTypeServices`}
                 >
-                  Regular cleaning
+                  Bi-weekly Cleaning
                 </h1>
               </li>
               <li
@@ -67,7 +67,7 @@ const MenuFrequencyServices = ({
                 <h1
                   className={`w-[100%]  bg-clip-text text-[110%] text-transparent p-3 pr-4 pl-8 textTypeServices`}
                 >
-                  Deep cleaning
+                  Monthly Cleaning
                 </h1>
               </li>
               <li
@@ -79,7 +79,7 @@ const MenuFrequencyServices = ({
                 <h1
                   className={`w-[100%] bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 bg-clip-text text-[110%] text-transparent p-3 pr-4 pl-8 textTypeServices`}
                 >
-                  Move in cleaning
+                  One-Time Deep Cleaning
                 </h1>
               </li>
               <li
@@ -92,7 +92,7 @@ const MenuFrequencyServices = ({
                 <h1
                   className={`flex items-center w-[100%]  bg-clip-text text-[110%] text-transparent p-3 pr-4 pl-8  textTypeServices`}
                 >
-                  Move out cleaning
+                  Seasonal Cleaning
                 </h1>
               </li>
               <div className="flex mb-2"></div>

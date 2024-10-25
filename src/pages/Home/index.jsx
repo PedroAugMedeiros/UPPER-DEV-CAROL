@@ -289,46 +289,6 @@ export default function Home1Page() {
               </div>
 
               <div className="mb-10 flex flex-col items-center gap-48 md:gap-36 sm:gap-24">
-                <div className="h-[104px] self-stretch bg-[url(/public/images/img_group_4.png)] bg-cover bg-no-repeat py-[26px] md:h-auto sm:py-5">
-                  <div className="flex justify-center overflow-x-scroll md:flex-col">
-                    <div className="flex w-[352px] px-2.5 md:px-5">
-                      <Text
-                        size="text8xl"
-                        as="p"
-                        className="bg-gradient bg-clip-text text-[32.36px] font-normal text-transparent md:text-[30px] sm:text-[28px]"
-                      >
-                        Professional Service
-                      </Text>
-                    </div>
-                    <div className="flex w-[1086px] flex-1 justify-center md:flex-col md:self-stretch md:px-5">
-                      <Text
-                        size="text8xl"
-                        as="p"
-                        className="bg-gradient bg-clip-text text-[32.36px] font-normal text-transparent md:text-[30px] sm:text-[28px]"
-                      >
-                        Trustworthy Team
-                      </Text>
-                      <div className="flex w-[72%] justify-end md:w-full sm:flex-col">
-                        <Text
-                          size="text8xl"
-                          as="p"
-                          className="bg-gradient bg-clip-text text-[32.36px] font-normal text-transparent md:text-[30px] sm:text-[28px]"
-                        >
-                          Reliable Results
-                        </Text>
-                        <div className="flex">
-                          <Text
-                            size="text8xl"
-                            as="p"
-                            className="bg-gradient bg-clip-text text-[32.36px] font-normal text-transparent md:text-[30px] sm:text-[28px]"
-                          >
-                            Customer Focused
-                          </Text>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
                 <Scroll side={"right"} images={rowSix} speed={6000} />
                 <div className="container-xs md:px-5">
                   <div>

@@ -17,10 +17,10 @@ export default function Home1Rowcontactinfo() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    // if (name === "" || email === "" || message === "") {
-    //   alert("Preencha todos os campos");
-    //   return;
-    // }
+    if (name === "" || email === "" || message === "") {
+      alert("Preencha todos os campos");
+      return;
+    }
     emailjs.init({
       publicKey: "YOUR_PUBLIC_KEY",
       // Do not allow headless browsers
@@ -49,6 +49,8 @@ export default function Home1Rowcontactinfo() {
       },
       "y4V8jVNy0PQ9aRaQn"
     );
+
+    alert(`Hello ${name}, your email was sent successfully`);
 
     // emailjs
     //   .sendForm("service_bj6cfqx", "template_7476w6x", templateParams)
