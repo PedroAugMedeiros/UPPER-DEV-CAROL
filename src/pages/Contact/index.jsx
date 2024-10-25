@@ -49,7 +49,7 @@ export default function Home1Page() {
   return (
     <>
       <Helmet>
-        <title>Home 7</title>
+        <title>Contact</title>
         <meta
           name="description"
           content="Web site created using create-react-app"
@@ -73,7 +73,7 @@ export default function Home1Page() {
                     as="p"
                     className="mt-1.5 w-[50%] font-dmserifdisplay font-normal leading-[64px] text-gray-900_01 md:w-full md:text-[48px]"
                   >
-                    Leave the cleaning to us and get some rest.
+                    Contact info
                   </Text>
 
                   <Text
@@ -82,13 +82,9 @@ export default function Home1Page() {
                     className="w-[50%] text-[25.15px] font-normal leading-[37px] text-blue_gray-700_01 md:w-full md:text-[23px] sm:text-[21px]"
                   >
                     <>
-                      Welcome to 520 Cleaning Solutions, where we dedicate our
-                      care and expertise to transform your space. Committed to
-                      excellence, we provide cleaning services tailored to your
-                      specific needs, ensuring a consistently spotless and
-                      welcoming environment. <br />
-                      Trust us to handle the details while you enjoy the best
-                      things in life.
+                      Send us a message or call to discuss your needs. We
+                      respect your time and strive to respond quickly to all
+                      inquiries.
                     </>
                   </Text>
                 </div>

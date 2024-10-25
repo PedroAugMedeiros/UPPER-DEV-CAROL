@@ -76,7 +76,7 @@ export default function Home1Page() {
   return (
     <>
       <Helmet>
-        <title>Home 7</title>
+        <title>520 Cleaning Solutions</title>
         <meta
           name="description"
           content="Web site created using create-react-app"
@@ -106,7 +106,7 @@ export default function Home1Page() {
               <Header />
               <div className="relative mt-[-96px] flex h-[1702px] w-[88%] flex-col items-center bg-[url(/public/images/img_group_9.png)] bg-cover bg-no-repeat px-14 py-[186px] md:h-auto md:w-full md:p-5">
                 <div className="mb-[822px] flex w-[86%] flex-col items-start gap-7 md:w-full">
-                  <div className="flex flex-col items-start self-stretch py-[22px] sm:py-5">
+                  <div className="flex flex-col  self-stretch justify-center py-[22px] sm:py-5 mt-40">
                     <Text
                       size="text15xl"
                       as="p"
