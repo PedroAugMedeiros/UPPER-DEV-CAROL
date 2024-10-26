@@ -26,7 +26,7 @@ export default function Home1Columnannettebl() {
           items={[...Array(3)].map(() => (
             <React.Fragment key={Math.random()}>
               <section className="flex  md:flex-col  w-[100%]  justify-between">
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_18.png"
                     alt="Image"
@@ -57,7 +57,7 @@ export default function Home1Columnannettebl() {
                     />
                   </section>
                 </div>
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_21.png"
                     alt="Image"
@@ -89,7 +89,7 @@ export default function Home1Columnannettebl() {
                     />
                   </section>
                 </div>
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_18_68x68.png"
                     alt="Image"
@@ -120,13 +120,13 @@ export default function Home1Columnannettebl() {
                     />
                   </section>
                 </div>
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_21_68x68.png"
                     alt="Image"
                     className="absolute    h-[68px] w-[68px] rounded-[34px]  "
                   />
-                  <section className="flex flex-col p-5  bg-[#D9D9D9] w-[90%] ml-5 mt-5 pl-10 rounded-[25px] self-stretch h-[95%] justify-between ">
+                  <section className="flex flex-col p-5  bg-[#D9D9D9] w-[90%] ml-5 mt-5 pl-10 rounded-[25px] self-stretch h-[95%] justify-between">
                     <Heading
                       as="h6"
                       className="font-bevietnampro  font-semibold text-gray-900 md:text-[22px] mt-5 mb-5"
@@ -135,7 +135,7 @@ export default function Home1Columnannettebl() {
                     </Heading>
                     <Text
                       as="p"
-                      className="w-[100%] font-bevietnampro text-[16px] font-normal  text-gray-700 text-lg"
+                      className="w-[100%] font-bevietnampro text-[16px] font-normal  text-gray-700 text-lg "
                     >
                       Great job on our office cleaning! The team was prompt and
                       thorough, leaving our workspace spotless. Highly
@@ -153,7 +153,7 @@ export default function Home1Columnannettebl() {
                 </div>
               </section>
               <section className="flex  md:flex-col  w-[100%]  justify-between mt-5">
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_18.png"
                     alt="Image"
@@ -184,7 +184,7 @@ export default function Home1Columnannettebl() {
                     />
                   </section>
                 </div>
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_20.png"
                     alt="Image"
@@ -215,7 +215,7 @@ export default function Home1Columnannettebl() {
                     />
                   </section>
                 </div>
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_19_68x68.png"
                     alt="Image"
@@ -244,7 +244,7 @@ export default function Home1Columnannettebl() {
                     />
                   </section>
                 </div>
-                <div className="  flex-row w-[25%]">
+                <div className="  flex-row w-[25%] sm:w-[100%]">
                   <Img
                     src="images/img_ellipse_20_68x68.png"
                     alt="Image"

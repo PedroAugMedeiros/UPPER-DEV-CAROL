@@ -3,7 +3,7 @@ import { Text, Button, Heading, Img, SelectBox, Input } from "../../components";
 import EcoFriendlyProductDescription from "../../components/EcoFriendlyProductDescription";
 import FeatureList from "../../components/FeatureList";
 import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import HeaderHome from "../../components/HeaderHome";
 import Home1ColumnFifteen from "./Home1ColumnFifteen";
 import Home1Columnannettebl from "./Home1Columnannettebl";
 import Home1RowEight from "./Home1RowEight.jsx";
@@ -82,10 +82,10 @@ export default function Home1Page() {
           content="Web site created using create-react-app"
         />
       </Helmet>
-      <div className="w-full bg-gray-200 ">
-        <div className="flex flex-col items-center">
-          <div className="relative h-[1868px] self-stretch">
-            <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-end">
+      <div className="w-full bg-gray-200 overflow-x-none ">
+        <div className="flex flex-col items-center verflow-x-none">
+          <div className="relative h-[1868px] self-stretch verflow-x-none">
+            <div className="absolute left-0 right-0 top-[5%] m-auto flex flex-1 flex-col items-end verflow-x-none">
               <Img
                 src="images/img_rectangle_102.png"
                 alt="Image"
@@ -102,22 +102,22 @@ export default function Home1Page() {
               alt="Image"
               className="absolute left-0 top-[5%] m-auto h-[1342px] w-[52%] object-contain"
             />
-            <div className="absolute left-0 right-0 top-0 m-auto flex flex-1 flex-col items-start">
-              <Header />
-              <div className="relative mt-[-96px] flex h-[1702px] w-[88%] flex-col items-center bg-[url(/public/images/img_group_9.png)] bg-cover bg-no-repeat px-14 py-[186px] md:h-auto md:w-full md:p-5">
+            <div className="absolute bottom-0 left-0 right-0 top-0  flex  flex-col items-center sm:flex-col max-w-[100%] overflow-x-none">
+              <HeaderHome />
+              <div className="relative mt-[-96px] flex h-[1702px] w-[100%] flex-col items-center bg-[url(/public/images/img_group_9.png)] bg-cover bg-no-repeat px-14 py-[186px] md:h-auto md:w-full md:p-5">
                 <div className="mb-[822px] flex w-[86%] flex-col items-start gap-7 md:w-full">
-                  <div className="flex flex-col  self-stretch justify-center py-[22px] sm:py-5 mt-40">
+                  <div className="flex flex-col mt-52  self-stretch justify-center py-[22px] sm:py-5 sm:mt-96 mb-20 pb-20">
                     <Text
                       size="text15xl"
                       as="p"
-                      className="mt-1.5 w-[66%] font-dmserifdisplay text-[70.77px] font-normal leading-[64px] text-gray-900_01 md:w-full md:text-[48px]"
+                      className="mt-1.5 w-[66%] font-dmserifdisplay text-[70.77px] font-normal leading-[64px] text-gray-900_01 md:w-full md:text-[48px] sm:text-left "
                     >
                       Leave the cleaning to us and get some rest.
                     </Text>
                     <Text
                       size="text10xl"
                       as="p"
-                      className="mt-4 text-[35.4px] font-normal text-gray-900_01 md:text-[33px] sm:text-[31px]"
+                      className="mt-4 text-[35.4px] font-normal text-gray-900_01 md:text-[33px] sm:text-md sm:w-[50%]"
                     >
                       520 the solution for your rest!
                     </Text>
@@ -149,7 +149,7 @@ export default function Home1Page() {
                       }
                         ${
                           action === "leave" ? "growdown" : "bg-teal-300"
-                        } flex h-[56px] min-w-[242px] flex-row items-center justify-center rounded-[10px]  px-[18px] text-center text-[26.83px] text-gray-200 md:text-[24px] sm:text-[22px] z-0`}
+                        } flex h-[56px] min-w-[242px] flex-row items-center justify-center rounded-[10px]  px-[18px] text-center text-[26.83px] text-gray-200 md:text-[24px] sm:text-[22px] z-0 sm:w-[100%] flex gap-7 md:flex-col sm:hidden`}
                       onMouseEnter={handleHoverEnter}
                       onMouseLeave={handleHoverLeave}
                     >
@@ -159,15 +159,15 @@ export default function Home1Page() {
                 </div>
               </div>
             </div>
-            <div className="absolute bottom-px left-0 right-0 m-auto flex flex-1 flex-col items-end">
+            <div className="absolute bottom-px left-0 right-0 m-auto flex flex-1 flex-col items-end w-[100%] ">
               <Img
                 src="images/img_3_1.png"
                 alt="Image"
-                className="relative z-[2] h-[936px] w-[42%] object-contain"
+                className="aboslute z-100 top-10 h-[936px] w-[42%] object-contain pt-40"
               />
-              <div className="relative mt-[-144px] flex flex-col items-center justify-end self-stretch bg-gray-200 py-5">
+              <div className="relative sm:flex mt-[-144px] flex flex-col items-center justify-end self-stretch bg-gray-200 py-5">
                 <div className=" mt-[610px] flex flex-col items-start gap-[62px] md:px-5 sm:gap-[31px] w-[80%]">
-                  <div className="mr-[570px] flex gap-14 w-[60%] md:mr-0 md:flex-col">
+                  <div className="mr-[570px] flex gap-14 w-[60%] md:mr-0">
                     <FeatureList className="w-[56%]" />
                     <FeatureList
                       vettedText="Affordable Prices"
@@ -194,7 +194,7 @@ export default function Home1Page() {
               <Heading
                 size="heading7xl"
                 as="h1"
-                className="font-bevietnampro text-[63px] font-semibold text-gray-900 md:text-[48px]"
+                className="font-bevietnampro text-[63px] font-semibold text-gray-900 md:text-[48px] sm:hidden"
               >
                 About Our Company!
               </Heading>
@@ -203,7 +203,7 @@ export default function Home1Page() {
                 as="p"
                 className="w-[68%] font-bevietnampro text-[22.91px] font-normal leading-[160%] text-gray-700 md:w-full md:px-5"
               >
-                <>
+                {/* <>
                   520 Cleaning Solutions has been dedicated to providing a
                   clean, balanced, and welcoming environment for your families.{" "}
                   <br />
@@ -211,11 +211,11 @@ export default function Home1Page() {
                   With seven years of experience, our mission is to allow our
                   clients to focus on precious moments with their loved ones
                   while we take care of the cleaning with love and care.{" "}
-                </>
+                </> */}
               </Text>
             </div>
-            <div className="container-xs absolute bottom-0 left-0 right-0 top-0 z-[3] my-auto flex h-max justify-center px-[50px] md:px-5">
-              <div className="flex w-full flex-col gap-7 rounded-[10px] border-[1.2px] border-solid border-white-a700 bg-white-a700 p-[18px] shadow-sm">
+            <div className="container-xs absolute bottom-0 left-0 right-0 top-0 z-[3] my-auto flex h-max justify-center px-[50px] md:px-5 ">
+              <div className="flex w-full flex-col gap-7 rounded-[10px] border-[1.2px] border-solid border-white-a700 bg-white-a700 p-[18px] shadow-sm sm:mt-[150%]">
                 <div className="flex gap-7 md:flex-col">
                   <div
                     className="selectServices cursor-pointer flex flex h-[64px] w-full items-center justify-center rounded border-[1.2px] border-solid border-blue_gray-700 px-[18px] font-roboto text-[16.73px] tracking-[0.30px] text-teal-300"
@@ -302,18 +302,18 @@ export default function Home1Page() {
                             className="mb-9 md:mb-0"
                           />
                         </div>
-                        <div className="ml-[156px] mr-[180px] mt-[52px] flex flex-col items-center gap-3 md:mx-0">
+                        <div className="ml-[156px] mr-[180px] mt-[52px] flex flex-col items-center gap-3 md:mx-0 sm:flex ">
                           <Heading
                             size="heading6xl"
                             as="h2"
-                            className="font-bevietnampro text-[48px] font-bold text-teal-300_01 md:text-[44px] sm:text-[38px]"
+                            className="font-bevietnampro text-[48px] font-bold text-teal-300_01 md:text-[44px] sm:text-[38px] "
                           >
                             Cross-Contamination Prevention:
                           </Heading>
                           <Text
                             size="textxl"
                             as="p"
-                            className="self-stretch text-center font-roboto text-[22.91px] font-normal leading-[160%] text-black-900"
+                            className="self-stretch text-center font-roboto text-[22.91px] font-normal leading-[160%] text-black-900 sm:w-[40%]"
                           >
                             At 520 Cleaning Solutions, we take cleanliness
                             seriously. We use different cleaning cloths for each
@@ -454,7 +454,7 @@ export default function Home1Page() {
                         <Text
                           size="text5xl"
                           as="p"
-                          className="relative mt-[-16px] text-[26.16px] font-normal capitalize text-gray-800 md:text-[24px] sm:text-[22px]"
+                          className="relative mt-[-16px] text-[26.16px] font-normal capitalize text-gray-800 md:text-[24px] sm:text-[22px] sm:w-[20%]"
                         >
                           Join Our List of Satisfied Customers!
                         </Text>

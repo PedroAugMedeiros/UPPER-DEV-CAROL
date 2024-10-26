@@ -15,11 +15,11 @@ const ActualLanguage = ({
 }) => {
   function handleIcons() {
     if (selectedLanguage == "Portuguese") {
-      return <Img src={PortugueseLogo} className="flex w-[18%]" />;
+      return <Img src={PortugueseLogo} className="flex   w-[10%] " />;
     } else if (selectedLanguage == "English") {
-      return <Img src={EnglishLogo} className="flex w-[18%]" />;
+      return <Img src={EnglishLogo} className="flex   w-[10%]" />;
     } else {
-      return <Img src={SpanishLogo} className="flex w-[18%] " />;
+      return <Img src={SpanishLogo} className="flex w-[10%] " />;
     }
   }
 
@@ -28,7 +28,7 @@ const ActualLanguage = ({
       onClick={() => {
         setMenuLanguageIsOpen(true);
       }}
-      className="flex w-[64%] h-12 gap-0 justify-center items-center  rounded-[18px]  bg-blue_gray-100 hover:bg-[#a8a4a4] hover:cursor-pointer border-solid border-gray-900_01 md:w-full gap-5 py-2"
+      className="flex w-[100%] h-12 gap-0 justify-center items-center  rounded-[18px]  bg-blue_gray-100 hover:bg-[#a8a4a4] hover:cursor-pointer border-solid border-gray-900_01  py-2 z-0 p-0 gap-2  py-0  px-1 h-6"
     >
       {handleIcons()}
       <h1
@@ -37,7 +37,7 @@ text-[14.99px]
 font-medium
 font-['DM
 Sans']
-leading-[14.99px]"
+leading-[14.99px] text-[20%]"
       >
         {selectedLanguage}
       </h1>

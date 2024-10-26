@@ -10,11 +10,11 @@ export default function AboutusColumndesignsem() {
 height: 2833px;"
     >
       <div className="mx-auto flex w-full max-w-[1278px] self-stretch">
-        <div className="flex w-full items-center md:flex-col">
+        <div className="flex w-full items-center md:flex-col sm:top-[20%]">
           <Img
             src={CarolPhoto}
             alt="Designsemnome"
-            className="h-[792px] w-[46%] rounded-[90px] object-contain md:w-full top-0"
+            className="h-[792px] w-[46%] rounded-[90px] object-contain md:w-full sm:mt-40"
           />
           <div className="flex flex-1 flex-col items-end gap-[62px] md:self-stretch sm:gap-[31px]">
             <div className="flex w-[88%] flex-col gap-7 md:w-full">
@@ -57,7 +57,7 @@ height: 2833px;"
               href="https://forms.gle/LNWMEL59EvRHchmH8"
               target="blank"
             >
-              <Button className="mr-4 flex h-[60px] min-w-[604px] flex-row items-center justify-center rounded-[12px] bg-teal-300 px-5 text-center text-[33.03px] capitalize text-white-a700 md:mr-0 md:text-[31px] sm:text-[29px] growUpButton w-[50%]">
+              <Button className="mr-4 flex h-[60px] min-w-[604px] flex-row items-center justify-center rounded-[12px] bg-teal-300 px-5 text-center text-[33.03px] capitalize text-white-a700 md:mr-0 md:text-[31px] sm:text-[29px] growUpButton w-[50%] sm:w-[10%]">
                 Join Our List of Satisfied Customers!
               </Button>
             </a>

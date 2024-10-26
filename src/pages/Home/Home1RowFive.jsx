@@ -3,19 +3,19 @@ import React from "react";
 
 export default function Home1RowFive() {
   return (
-    <div className="mt-[76px] flex justify-start self-stretch  md:px-5">
-      <div className="flex w-[100%] items-start justify-end  bg-blue_gray-100_01 md:w-full md:flex-col">
-        <div className="flex justify-end mt-[52px]  w-[40%] flex-col md:w-full md:px-5">
+    <div className="mt-[76px] flex justify-start self-stretch  md:px-5 sm:justify-center sm:items-center">
+      <div className="flex w-[100%] items-start justify-end  bg-blue_gray-100_01 md:w-full md:flex-col sm:items-center sm:justify-cente sm:self-center">
+        <div className="flex justify-end mt-[52px]  w-[40%] flex-col md:w-full md:px-5 sm:w-[60%] sm:text-center sm:w-[100%] sm:justify-center sm:self-stretch min-w-[314px] sm:ml-[5%]">
           <Text
             size="text11xl"
             as="p"
-            className="text-[38.56px] font-normal text-gray-900_01 md:text-[36px] sm:text-[34px]"
+            className="text-[38.56px] font-normal text-gray-900_01 md:text-[36px] sm:text-[34px] sm:w-[100%]"
           >
             Ready to get started?
           </Text>
           <Text
             as="p"
-            className="mt-1 w-[92%] text-[16.97px] font-normal leading-[22px] text-gray-900_01 md:w-full"
+            className="mt-1 w-[92%] text-[16.97px] font-normal leading-[22px] text-gray-900_01 md:w-full min-w-[314px]"
           >
             <>
               Imagine walking into a space that feels fresh, organized, and
@@ -39,7 +39,7 @@ export default function Home1RowFive() {
             <div className="flex justify-end items-end  w-[50%]">
               <iframe
                 frameborder="0"
-                className="juxtapose self-stretch w-[140%]"
+                className="juxtapose self-stretch w-[140%] sm:w-[300%] sm:flex sm:justify-center items-center sm:hidden"
                 width="100%"
                 height=""
                 src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=65c754b2-8dc5-11ef-9397-d93975fe8866"

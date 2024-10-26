@@ -46,7 +46,7 @@ export default function Header({ ...props }) {
 
   function handleLanguageButtons() {
     return menuLanguageIsOpen ? (
-      <div className="flex shadow-none z-0 justify-center items-center w-[20%] ">
+      <div className="flex shadow-none z-20 justify-center items-center w-[20%] sm:w-[100%] ">
         <MenuLanguage
           Icon={PortugueseLogo}
           selectedLanguage={selectedLanguage}
@@ -55,7 +55,7 @@ export default function Header({ ...props }) {
         />
       </div>
     ) : (
-      <div className="flex justify-center items-center w-[20%] self-stretch ">
+      <div className="flex justify-center items-center w-[20%] sm:w-[450%]">
         <ActualLanguage
           Icon={PortugueseLogo}
           selectedLanguage={selectedLanguage}
@@ -68,14 +68,14 @@ export default function Header({ ...props }) {
   return (
     <header
       {...props}
-      className={`${props.className} flex self-stretch w-[100%]   p-[22px] sm:p-5  fixed bg-teal-100_4c items-start z-50 top-0 fixed`}
+      className={`${props.className} flex w-[100%]   p-[22px] sm:p-5  fixed bg-teal-100_4c items-start z-50 top-0 fixed overflow-x-hidden lex lg:w-[100%] items-center justify-around  gap-5 self-strech sm:flex-col sm:w-[100%]`}
     >
-      <div className="flex w-[100%] items-center justify-around  gap-5 ">
+      <div className="flex sm:flex-col  items-center justify-around  gap-5 p-0 w-[20%] sm:w-[90%]">
         <div
           onClick={() => {
             getPageYAfterScroll();
           }}
-          className="flex w-[15%] gap-1  cursor-pointer  items-center px-4 p-2 rounded-[20px] border-[1.52px] border-solid border-gray-900_01 [20%] "
+          className="flex  gap-1  cursor-pointer  items-center px-4 p-2 rounded-[20px] border-[1.52px] border-solid border-gray-900_01 sm:w-[100%] md:w-[10%] "
         >
           <Text
             size="text:lg"
@@ -104,8 +104,8 @@ export default function Header({ ...props }) {
             Solutions
           </Text>
         </div>
-        <div className="flex  flex-1 justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01   md:self-stretch flex-nowrap">
-          <ul className="flex gap-[30px] sm:flex-col">
+        <div className="flex  flex-1 justify-center gap-[34px] rounded-[24px] p-4 bg-gray-900_01    flex-row sm:flex-col sm:gap-1 sm:w-[100%] ">
+          <ul className="flex gap-[30px] sm:flex-row flex-wrap sm:justify-center ">
             <li>
               {window.location.pathname === "/Home" ? (
                 <a
@@ -158,7 +158,7 @@ export default function Header({ ...props }) {
                   size="textxs"
                   as="p"
                   id="AboutUs"
-                  className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline inline-block flex-nowrap text-nowrap"
+                  className="text-lg font-medium text-white-a700 hover:text-orange-300 hover:underline inline-block flex-nowrap text-nowrap sm:text"
                 >
                   About us
                 </Heading>
@@ -249,7 +249,7 @@ export default function Header({ ...props }) {
               </a>
             </li>
           </ul>
-          <div className="flex items-center gap-0.5">
+          <div className="flex items-center gap-0.5 sm:text-center sm:justify-center">
             <Img
               src="images/img_symbol.png"
               alt="Symbol"

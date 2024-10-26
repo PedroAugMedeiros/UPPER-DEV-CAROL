@@ -7,14 +7,21 @@ export default function EcoFriendlyProductDescription({
   ...props
 }) {
   return (
-    <div {...props} className={`${props.className} flex flex-col items-center w-[50%] md:w-full`}>
-      <Heading size="headingxs" as="h1" className="font-bevietnampro text-[48px] font-bold text-teal-300_01">
+    <div
+      {...props}
+      className={`${props.className} flex flex-col items-center w-[50%] md:w-full`}
+    >
+      <Heading
+        size="headingxs"
+        as="h1"
+        className="font-bevietnampro text-[48px] font-bold text-teal-300_01"
+      >
         {titleText}
       </Heading>
       <Text
         size="textxl"
         as="p"
-        className="w-full font-roboto text-[22.91px] font-normal leading-[160%] text-black-900"
+        className="w-full font-roboto text-[22.91px] font-normal leading-[160%] text-black-900 sm:w-[20%]"
       >
         {descriptionText}
       </Text>

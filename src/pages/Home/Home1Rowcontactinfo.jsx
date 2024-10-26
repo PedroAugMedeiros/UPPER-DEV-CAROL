@@ -78,7 +78,7 @@ export default function Home1Rowcontactinfo() {
         onSubmit={sendEmail}
         className="contactForm mb-[54px] flex flex-1 flex-col items-end gap-[46px] md:self-stretch "
       >
-        <div className="flex w-[86%] flex-col items-center gap-2.5 md:w-full">
+        <div className="flex w-[86%] flex-col sm:items-center gap-2.5 md:w-full mt-40">
           <div className="flex flex-col items-start gap-1 self-stretch">
             <Text
               size="textmd"
@@ -147,7 +147,7 @@ export default function Home1Rowcontactinfo() {
             />
           </div>
           <ReCAPTCHA
-            sitekey="6Lf_KmcqAAAAAGTBFtrxX-Z6OcC9mPjj1dgEN1QF"
+            sitekey="6LfSOWwqAAAAALzSsTzjn7v5ruinNb6bcvJvcCJV"
             onChange={() => setCaptchaChecked(true)}
           />
           {disableSubmit ? (

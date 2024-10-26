@@ -85,58 +85,80 @@ export default function Home1Rowcommercial() {
                 setSliderState(e?.item);
               }}
               ref={sliderRef}
-              items={slideContent.map((item) => (
-                <React.Fragment key={Math.random()}>
-                  <div className="px-[15px]">
-                    <div className="flex flex-col gap-3.5">
-                      <Img
-                        src={item.image}
-                        alt="Image"
-                        className="h-[262px] rounded-[26.825px] object-cover"
-                      />
-                      <div className="flex flex-col justify-end items-start gap-6 self-stretch h-full">
-                        <div className="flex flex-col  justify-end gap-2.5 self-stretch justify-center ml-[5%]">
-                          <Heading
-                            as="h4"
-                            className="font-bevietnampro text-[24px] font-semibold text-gray-900 md:text-[22px]"
-                          >
-                            {item.name}
-                          </Heading>
-                          <Text
-                            as="p"
-                            className="h-full w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700 ml-[1%]"
-                          >
-                            {item.text}
-                          </Text>
+              items={slideContent.map((item) => {
+                let pageCorrect = "/Home";
+                if (item.name === "Commercial cleaning") {
+                  pageCorrect = "/CommercialCleaning";
+                }
+                if (item.name === "Regular cleaning") {
+                  pageCorrect = "/RegularCleaning";
+                }
+                if (item.name === "Deep cleaning") {
+                  pageCorrect = "/DeepCleaning";
+                }
+                if (item.name === "Move out cleaning") {
+                  pageCorrect = "/MoveInAndOutCleaning";
+                }
+                if (item.name === "Move in cleaning") {
+                  pageCorrect = "/MoveInAndOutCleaning";
+                }
+                return (
+                  <React.Fragment key={Math.random()}>
+                    <div className="px-[15px]">
+                      <div className="flex flex-col gap-3.5">
+                        <Img
+                          src={item.image}
+                          alt="Image"
+                          className="h-[262px] rounded-[26.825px] object-cover"
+                        />
+                        <div className="flex flex-col justify-end items-start gap-6 self-stretch h-full">
+                          <div className="flex flex-col  justify-end gap-2.5 self-stretch justify-center ml-[5%]">
+                            <Heading
+                              as="h4"
+                              className="font-bevietnampro text-[24px] font-semibold text-gray-900 md:text-[22px]"
+                            >
+                              {item.name}
+                            </Heading>
+                            <Text
+                              as="p"
+                              className="h-full w-full font-bevietnampro text-[16px] font-normal leading-[150%] text-gray-700 ml-[1%]"
+                            >
+                              {item.text}
+                            </Text>
+                          </div>
+                          <a href={`${pageCorrect}`}>
+                            <Button
+                              onMouseEnter={(e) => handleHoverEnter(e)}
+                              onMouseLeave={(e) => handleHoverLeave(e)}
+                              rightIcon={
+                                <div
+                                  alt="Arrow Left"
+                                  className={`learnMoreImg mb-0.5 h-[20px] w-[20px]`}
+                                ></div>
+                              }
+                              className="LearnMoreButton flex h-[44px] min-w-[158px] flex-row items-center justify-center gap-2.5 rounded-md border border-solid border-gray-700 px-[19px] text-center font-bevietnampro text-[16px] text-gray-900 ml-[5%] mt-[5%] bottom-4"
+                            >
+                              Learn more{" "}
+                            </Button>
+                          </a>
                         </div>
-                        <Button
-                          onMouseEnter={(e) => handleHoverEnter(e)}
-                          onMouseLeave={(e) => handleHoverLeave(e)}
-                          rightIcon={
-                            <div
-                              alt="Arrow Left"
-                              className={`learnMoreImg mb-0.5 h-[20px] w-[20px]`}
-                            ></div>
-                          }
-                          className="LearnMoreButton flex h-[44px] min-w-[158px] flex-row items-center justify-center gap-2.5 rounded-md border border-solid border-gray-700 px-[19px] text-center font-bevietnampro text-[16px] text-gray-900 ml-[5%] mt-[5%] bottom-4"
-                        >
-                          Learn more{" "}
-                        </Button>
                       </div>
                     </div>
-                  </div>
-                </React.Fragment>
-              ))}
+                  </React.Fragment>
+                );
+              })}
             />
           </div>
-          <Button
-            onClick={() => {
-              sliderRef?.current?.slideNext();
-            }}
-            className="relative ml-[-28px] mt-[104px] flex h-[52px] w-[52px] items-center justify-center rounded-[26px] bg-teal-300 px-1 md:ml-0"
-          >
-            <Img src="images/img_arrow_left_white_a700_1.svg" />
-          </Button>
+          <a href="/">
+            <Button
+              onClick={() => {
+                sliderRef?.current?.slideNext();
+              }}
+              className="relative ml-[-28px] mt-[104px] flex h-[52px] w-[52px] items-center justify-center rounded-[26px] bg-teal-300 px-1 md:ml-0 sm:hidden"
+            >
+              <Img src="images/img_arrow_left_white_a700_1.svg " />
+            </Button>
+          </a>
         </div>
       </div>
     </div>

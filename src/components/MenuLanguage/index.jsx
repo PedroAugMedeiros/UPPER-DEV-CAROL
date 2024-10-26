@@ -28,21 +28,21 @@ const MenuLanguage = ({
       return (
         <Img
           src={PortugueseLogo}
-          className="flex justify-center items-center w-[20%] ml-2  "
+          className="flex justify-center items-center w-[20%] ml-2  sm:w-[10%]"
         />
       );
     } else if (language == "English") {
       return (
         <Img
           src={EnglishLogo}
-          className="flex w-[18%] flex justify-center items-center w-[20%] ml-2"
+          className="flex w-[18%] flex justify-center items-center w-[20%] ml-2 sm:w-[10%]"
         />
       );
     } else {
       return (
         <Img
           src={SpanishLogo}
-          className="flex w-[18%]flex justify-center items-center w-[20%] ml-2 "
+          className="flex w-[18%]flex justify-center items-center w-[20%] ml-2 sm:w-[10%]"
         />
       );
     }
@@ -69,7 +69,7 @@ text-[14.99px]
 font-medium
 font-['DM
 Sans']
-leading-[14.99px]"
+leading-[14.99px] "
             >
               {item.value}
             </h1>
@@ -82,7 +82,7 @@ leading-[14.99px]"
       onClick={() => setMenuLanguageIsOpen(false)}
       className="flex w-[100%] shadow-none    flex-col justify-center items-center p-0 m-0 rounded-md"
     >
-      <div className="flex flex-col rounded w-[80%] gap-1 justify-start items-center">
+      <div className="flex flex-col rounded w-[80%] gap-1  items-center sm:w-[20%] justify-center">
         {handleLanguages()}
       </div>
     </div>

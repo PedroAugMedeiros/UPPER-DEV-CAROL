@@ -6,7 +6,11 @@ module.exports = {
   ],
   darkMode: "class",
   theme: {
-    screens: { md: { max: "1050px" }, sm: { max: "550px" } },
+    screens: {
+      lg: { min: "1051px" },
+      md: { min: "550px" },
+      sm: { max: "550px" },
+    },
     extend: {
       colors: {
         amber: {

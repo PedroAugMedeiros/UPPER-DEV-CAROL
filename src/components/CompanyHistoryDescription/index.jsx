@@ -6,9 +6,10 @@ export default function CompanyHistoryDescription({
     <>
       Our History <br />
       <br />
-      520 Cleaning Solutions started over seven years ago with a vision to create more than just a cleaning company. We
-      wanted to offer a service that brings peace and comfort to every space we touch. From the beginning, our passion
-      was to transform environments into clean, welcoming places.
+      520 Cleaning Solutions started over seven years ago with a vision to
+      create more than just a cleaning company. We wanted to offer a service
+      that brings peace and comfort to every space we touch. From the beginning,
+      our passion was to transform environments into clean, welcoming places.
     </>
   ),
   ...props
